@@ -1,3 +1,5 @@
+import pmwiseIcon from './pmwise_icon_color.png'
+
 export const metadata = {
   title: 'PMWise.AI - Guaranteed Traceable Benefit Realisation',
 }
@@ -14,6 +16,7 @@ export default function Home() {
         </nav>
 
         <section style={{ maxWidth: '1280px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', paddingTop: '6rem', paddingBottom: '6rem', textAlign: 'center' }}>
+          <img src={pmwiseIcon.src} alt="PMWISE.AI logo" width={96} height={96} style={{ display: 'block', margin: '0 auto 1.5rem', width: '96px', height: '96px' }} />
           <h1 style={{ fontSize: '48px', fontWeight: 'bold', color: '#111827', marginBottom: '1rem' }}>PMWISE.AI</h1>
           <h2 style={{ fontSize: '24px', color: '#4b5563', marginBottom: '3rem', fontWeight: '600' }}>Guaranteed Traceable Benefit Realisation</h2>
           
