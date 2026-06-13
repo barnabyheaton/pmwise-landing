@@ -16,6 +16,8 @@ export default function Home() {
           </span>
           <a
             href="mailto:info@pmwise.ai"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex min-h-[44px] items-center px-2 font-medium text-brand-700 underline-offset-4 hover:underline"
           >
             Contact
@@ -84,6 +86,8 @@ export default function Home() {
             </p>
             <a
               href="mailto:info@pmwise.ai"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-brand-700 px-8 py-3 text-lg font-semibold text-white transition-colors hover:bg-brand-800"
             >
               Get early access
@@ -97,6 +101,8 @@ export default function Home() {
         <p className="mt-2 text-sm">
           <a
             href="mailto:info@pmwise.ai"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-brand-700 underline-offset-4 hover:underline"
           >
             info@pmwise.ai
