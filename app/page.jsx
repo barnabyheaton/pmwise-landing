@@ -2,56 +2,107 @@ import pmwiseIcon from './pmwise_icon_color.png'
 
 export const metadata = {
   title: 'PMWise.AI - Guaranteed Traceable Benefit Realisation',
+  description: 'Identify and deliver your highest-impact opportunities',
 }
 
 export default function Home() {
   return (
-    <html>
-      <body style={{ fontFamily: 'system-ui', margin: 0, padding: 0, background: 'white', color: '#1f2937' }}>
-        <nav style={{ borderBottom: '1px solid #e5e7eb', padding: '1rem 0' }}>
-          <div style={{ maxWidth: '1280px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#58cc03' }}>PMWISE.AI</div>
-            <a href="mailto:info@pmwise.ai" style={{ color: '#374151', textDecoration: 'none' }}>Contact</a>
-          </div>
-        </nav>
+    <>
+      <header className="border-b border-brand-dark/10">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <span className="flex items-center gap-2 text-2xl font-bold text-brand-dark">
+            <img src={pmwiseIcon.src} alt="" width={32} height={32} className="h-8 w-8" />
+            PMWISE.AI
+          </span>
+          <a
+            href="mailto:info@pmwise.ai"
+            className="inline-flex min-h-[44px] items-center px-2 font-medium text-brand-700 underline-offset-4 hover:underline"
+          >
+            Contact
+          </a>
+        </div>
+      </header>
 
-        <section style={{ maxWidth: '1280px', margin: '0 auto', paddingLeft: '1.5rem', paddingRight: '1.5rem', paddingTop: '6rem', paddingBottom: '6rem', textAlign: 'center' }}>
-          <img src={pmwiseIcon.src} alt="PMWISE.AI logo" width={96} height={96} style={{ display: 'block', margin: '0 auto 1.5rem', width: '96px', height: '96px' }} />
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', color: '#111827', marginBottom: '1rem' }}>PMWISE.AI</h1>
-          <h2 style={{ fontSize: '24px', color: '#4b5563', marginBottom: '3rem', fontWeight: '600' }}>Guaranteed Traceable Benefit Realisation</h2>
-          
-          <div style={{ maxWidth: '768px', margin: '0 auto', textAlign: 'left', marginBottom: '3rem', lineHeight: '1.75' }}>
-            <p style={{ color: '#374151' }}>Despite 70 years of modern project management practice, 70% of projects still fail—a multi-trillion-dollar loss annually.</p>
-            <p style={{ color: '#374151' }}>The root cause: Projects measure scope, budget, and timeline. They ignore why the project exists in the first place.</p>
-            <p style={{ color: '#374151' }}><strong>PMWISE.AI inverts this.</strong> We place your project's purpose—the benefit you're trying to realise—at the centre of everything. Using AI-powered analysis, we help you identify your highest-impact opportunities, then deliver real-time, fully traceable benefit realisation throughout execution.</p>
-            <p style={{ color: '#374151' }}>The difference is stark: Most project managers avoid high-risk areas because they believe there's little to gain. We know the opposite is true. The Stoics had it right: <em>"The obstacle is the way."</em> Your greatest opportunities hide in the problems you'd rather avoid.</p>
+      <main>
+        <section className="mx-auto max-w-7xl px-6 py-24 text-center">
+          <img
+            src={pmwiseIcon.src}
+            alt=""
+            width={96}
+            height={96}
+            className="mx-auto mb-6 h-24 w-24"
+          />
+          <h1 className="mb-4 text-5xl font-bold text-brand-dark">PMWISE.AI</h1>
+          <p className="mb-12 text-2xl font-semibold text-brand-dark">
+            Guaranteed Traceable Benefit Realisation
+          </p>
+
+          <div className="mx-auto mb-12 max-w-3xl space-y-4 text-left text-lg leading-relaxed text-brand-dark">
+            <p>
+              Despite 70 years of modern project management practice, 70% of projects still
+              fail—a multi-trillion-dollar loss annually.
+            </p>
+            <p>
+              The root cause: Projects measure scope, budget, and timeline. They ignore why the
+              project exists in the first place.
+            </p>
+            <p>
+              <strong>PMWISE.AI inverts this.</strong> We place your project&apos;s purpose—the
+              benefit you&apos;re trying to realise—at the centre of everything. Using AI-powered
+              analysis, we help you identify your highest-impact opportunities, then deliver
+              real-time, fully traceable benefit realisation throughout execution.
+            </p>
+            <p>
+              The difference is stark: Most project managers avoid high-risk areas because they
+              believe there&apos;s little to gain. We know the opposite is true. The Stoics had it
+              right: <em>&ldquo;The obstacle is the way.&rdquo;</em> Your greatest opportunities
+              hide in the problems you&apos;d rather avoid.
+            </p>
           </div>
 
-          <div style={{ background: '#f0fdf4', borderRadius: '8px', padding: '2rem', marginBottom: '3rem', maxWidth: '768px', margin: '0 auto 3rem', textAlign: 'left' }}>
-            <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#111827', marginBottom: '1.5rem' }}>What We Do</h3>
-            <ol style={{ margin: 0, paddingLeft: '1.5rem' }}>
-              <li style={{ marginBottom: '1rem', color: '#374151' }}>Identify your most impactful opportunities (the risks others avoid)</li>
-              <li style={{ marginBottom: '1rem', color: '#374151' }}>Define them precisely using our SMAAART framework</li>
-              <li style={{ marginBottom: '1rem', color: '#374151' }}>Invert them into concrete, measurable benefits</li>
-              <li style={{ color: '#374151' }}>Execute with full traceability—every decision auditable, every outcome proven</li>
+          <div className="mx-auto mb-12 max-w-3xl rounded-lg bg-brand-100 p-8 text-left">
+            <h2 className="mb-6 text-xl font-bold text-brand-dark">What We Do</h2>
+            <ol className="list-decimal space-y-4 pl-6 text-brand-dark">
+              <li>Identify your most impactful opportunities (the risks others avoid)</li>
+              <li>Define them precisely using our SMAAART framework</li>
+              <li>Invert them into concrete, measurable benefits</li>
+              <li>
+                Execute with full traceability—every decision auditable, every outcome proven
+              </li>
             </ol>
-            <p style={{ color: '#111827', fontWeight: '600', marginTop: '1.5rem' }}>The result: Projects that deliver what they promised.</p>
+            <p className="mt-6 font-semibold text-brand-dark">
+              The result: Projects that deliver what they promised.
+            </p>
           </div>
 
-          <div style={{ marginBottom: '3rem' }}>
-            <p style={{ fontSize: '18px', color: '#374151', marginBottom: '1.5rem' }}>Early adopters in ANZ and APAC are already using PMWISE.AI.</p>
-            <p style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '2rem' }}>Join the movement. Get early access:</p>
-            <p style={{ color: '#6b7280' }}>Email: <a href="mailto:info@pmwise.ai" style={{ color: '#58cc03', fontWeight: '600', textDecoration: 'none' }}>info@pmwise.ai</a></p>
+          <div>
+            <p className="mb-6 text-lg text-brand-dark">
+              Early adopters in ANZ and APAC are already using PMWISE.AI.
+            </p>
+            <p className="mb-8 text-xl font-semibold text-brand-dark">
+              Join the movement. Get early access:
+            </p>
+            <a
+              href="mailto:info@pmwise.ai"
+              className="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-brand-700 px-8 py-3 text-lg font-semibold text-white transition-colors hover:bg-brand-800"
+            >
+              Get early access
+            </a>
           </div>
         </section>
+      </main>
 
-        <footer style={{ borderTop: '1px solid #e5e7eb', background: '#f9fafb', paddingTop: '2rem', paddingBottom: '2rem', textAlign: 'center', color: '#4b5563' }}>
-          <p>© 2026 PMWISE.AI. All rights reserved.</p>
-          <p style={{ fontSize: '14px', marginTop: '0.5rem' }}>
-            <a href="mailto:info@pmwise.ai" style={{ color: '#58cc03', textDecoration: 'none' }}>info@pmwise.ai</a>
-          </p>
-        </footer>
-      </body>
-    </html>
+      <footer className="border-t border-brand-dark/10 bg-brand-100/40 py-8 text-center text-brand-dark">
+        <p>&copy; 2026 PMWISE.AI. All rights reserved.</p>
+        <p className="mt-2 text-sm">
+          <a
+            href="mailto:info@pmwise.ai"
+            className="text-brand-700 underline-offset-4 hover:underline"
+          >
+            info@pmwise.ai
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }

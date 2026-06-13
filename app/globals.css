@@ -8,5 +8,26 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #1f2937;
+  color: #1f2937; /* brand.dark */
+}
+
+/* WCAG 2.2 AA: always-visible, high-contrast keyboard focus indicator. */
+:focus-visible {
+  outline: 3px solid #214b01; /* brand.800 — ≥3:1 against light surfaces */
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
