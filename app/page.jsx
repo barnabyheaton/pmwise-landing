@@ -1,8 +1,9 @@
 import pmwiseIcon from './pmwise_icon_color.png'
 
 export const metadata = {
-  title: 'PMWise.AI - Guaranteed Traceable Benefit Realisation',
-  description: 'Identify and deliver your highest-impact opportunities',
+  title: 'PMWISE.AI — Life is a project',
+  description:
+    'Put the why at the centre of the change you’re trying to make. PMWISE.AI uses AI to put 70 years of project best practice in the hands of individuals.',
 }
 
 export default function Home() {
@@ -15,9 +16,7 @@ export default function Home() {
             PMWISE.AI
           </span>
           <a
-            href="mailto:info@pmwise.ai"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise"
             className="inline-flex min-h-[44px] items-center px-2 font-medium text-brand-700 underline-offset-4 hover:underline"
           >
             Contact
@@ -26,71 +25,95 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="mx-auto max-w-7xl px-6 py-24 text-center">
+        <section className="mx-auto max-w-3xl px-6 py-24">
           <img
             src={pmwiseIcon.src}
             alt=""
             width={96}
             height={96}
-            className="mx-auto mb-6 h-24 w-24"
+            className="mx-auto mb-8 h-24 w-24"
           />
-          <h1 className="mb-4 text-5xl font-bold text-brand-dark">PMWISE.AI</h1>
-          <p className="mb-12 text-2xl font-semibold text-brand-dark">
-            Guaranteed Traceable Benefit Realisation
+
+          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-brand-700">
+            Life is a project
+          </p>
+          <h1 className="mb-6 text-center text-4xl font-bold leading-tight text-brand-dark sm:text-5xl">
+            You can manage the change in your life, or sit back and hope it works out.
+          </h1>
+          <p className="mx-auto mb-16 max-w-2xl text-center text-xl leading-relaxed text-brand-dark">
+            We all live in a constant stream of change. The scale and the speed vary, but the
+            flow never stops — so really there are only two choices: actively steer the changes
+            that matter to you, or hope they come good on their own.
           </p>
 
-          <div className="mx-auto mb-12 max-w-3xl space-y-4 text-left text-lg leading-relaxed text-brand-dark">
+          <div className="space-y-6 text-lg leading-relaxed text-brand-dark">
             <p>
-              Despite 70 years of modern project management practice, 70% of projects still
-              fail—a multi-trillion-dollar loss annually.
+              Project management has been evolving for 70 years, with varying degrees of
+              success. But the research keeps hitting the same ceiling: projects that fixate on{' '}
+              <em>how much</em> and <em>how long</em> miss what they set out to do about{' '}
+              <strong>70% of the time</strong>. And the whole discipline speaks in industrial,
+              enterprise language — tools and jargon that feel alien to an ordinary person just
+              trying to change something in their own life.
             </p>
             <p>
-              The root cause: Projects measure scope, budget, and timeline. They ignore why the
-              project exists in the first place.
+              Strip all that away and the process underneath is simple. A person, a team, an
+              organisation feels some kind of pain. They picture a better place they’d like to
+              be. They build a plan to get there. They put it in motion.
             </p>
             <p>
-              <strong>PMWISE.AI inverts this.</strong> We place your project&apos;s purpose—the
-              benefit you&apos;re trying to realise—at the centre of everything. Using AI-powered
-              analysis, we help you identify your highest-impact opportunities, then deliver
-              real-time, fully traceable benefit realisation throughout execution.
+              The trouble has always been what happens next. The focus snaps, almost instantly,
+              to <em>how long</em> and <em>how much</em> — and from there, that’s how the whole
+              thing gets run. The underlying <strong>why</strong> gets lost in the noise.
+              Projects lose focus, go rigid, or end up delivering the opposite of what set them
+              off in the first place.
             </p>
             <p>
-              The difference is stark: Most project managers avoid high-risk areas because they
-              believe there&apos;s little to gain. We know the opposite is true. The Stoics had it
-              right: <em>&ldquo;The obstacle is the way.&rdquo;</em> Your greatest opportunities
-              hide in the problems you&apos;d rather avoid.
+              PMWISE.AI is my attempt — as someone who’s spent 20 years inside these projects —
+              to use AI to build a way of delivering change where the{' '}
+              <strong>why is the centre and the core</strong> of everything that follows.
+            </p>
+            <p>
+              I started out wanting to help enterprises rewire how they work. But somewhere in
+              the building, I realised its real power is bigger than that. It isn’t only to learn
+              the lessons of bad project practice, keep the pieces that genuinely work, and put
+              benefits and rewards back at the heart of things. It’s also to show people
+              something they rarely get told: <strong>the issues you most want to avoid are
+              usually exactly where your greatest value is hiding.</strong>
             </p>
           </div>
 
-          <div className="mx-auto mb-12 max-w-3xl rounded-lg bg-brand-100 p-8 text-left">
-            <h2 className="mb-6 text-xl font-bold text-brand-dark">What We Do</h2>
-            <ol className="list-decimal space-y-4 pl-6 text-brand-dark">
-              <li>Identify your most impactful opportunities (the risks others avoid)</li>
-              <li>Define them precisely using our SMAAART framework</li>
-              <li>Invert them into concrete, measurable benefits</li>
-              <li>
-                Execute with full traceability—every decision auditable, every outcome proven
-              </li>
-            </ol>
-            <p className="mt-6 font-semibold text-brand-dark">
-              The result: Projects that deliver what they promised.
+          <blockquote className="my-12 border-l-4 border-brand-600 pl-6 text-2xl font-semibold leading-snug text-brand-dark">
+            The revolution comes from the ground up — not the top down.
+          </blockquote>
+
+          <div className="space-y-6 text-lg leading-relaxed text-brand-dark">
+            <p>
+              Here’s the part that took me longest to see. The power of this tool might one day
+              help enterprises change — but that kind of change comes from the ground up. The
+              real power of PMWISE.AI is to help <strong>individuals</strong> manage the changes
+              in their own lives.
+            </p>
+            <p>
+              It puts 70 years of project best practice into the hands of one person. It gives
+              you, in effect, a whole team of delivery specialists to help you find your way. And
+              most importantly, it helps you describe the{' '}
+              <strong>future you’re actually trying to reach</strong> — built on the real{' '}
+              <em>why</em> underneath the thing you’re trying to resolve.
             </p>
           </div>
 
-          <div>
-            <p className="mb-6 text-lg text-brand-dark">
-              Early adopters in ANZ and APAC are already using PMWISE.AI.
-            </p>
-            <p className="mb-8 text-xl font-semibold text-brand-dark">
-              Join the movement. Get early access:
+          <div className="mt-16 rounded-lg bg-brand-100 p-8 text-center">
+            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-brand-dark">
+              I’m building this in the open, on my own, from the Huon Valley in Tasmania — with a
+              lot of help from AI and no shortage of mistakes. No hype, no guarantees. Just the
+              method, the journey, and the proof as it comes. If you’ve got a change you’d rather
+              steer than hope your way through, come along.
             </p>
             <a
-              href="mailto:info@pmwise.ai"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
               className="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-brand-700 px-8 py-3 text-lg font-semibold text-white transition-colors hover:bg-brand-800"
             >
-              Get early access
+              Get on the early list
             </a>
           </div>
         </section>
@@ -100,12 +123,10 @@ export default function Home() {
         <p>&copy; 2026 PMWISE.AI. All rights reserved.</p>
         <p className="mt-2 text-sm">
           <a
-            href="mailto:info@pmwise.ai"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise"
             className="text-brand-700 underline-offset-4 hover:underline"
           >
-            info@pmwise.ai
+            support@pmwise.ai
           </a>
         </p>
       </footer>
