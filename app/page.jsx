@@ -34,17 +34,17 @@ export default function Home() {
             className="mx-auto mb-8 h-24 w-24"
           />
 
-          <p className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-brand-700">
-            Life is a project
-          </p>
-          <h1 className="mb-6 text-center text-4xl font-bold leading-tight text-brand-dark sm:text-5xl">
-            You can manage the change in your life, or sit back and hope it works out.
+          <h1 className="mb-8 text-center text-4xl font-bold leading-tight text-brand-700 sm:text-5xl">
+            &ldquo;Life is a project.&rdquo;
           </h1>
-          <p className="mx-auto mb-16 max-w-2xl text-center text-xl leading-relaxed text-brand-dark">
-            We all live in a constant stream of change. The scale and the speed vary, but the
-            flow never stops — so really there are only two choices: actively steer the changes
-            that matter to you, or hope they come good on their own.
-          </p>
+          <div className="mx-auto mb-16 max-w-2xl space-y-4 text-center text-xl leading-relaxed text-brand-dark">
+            <p>You can manage the change in your life, or sit back and hope it works out.</p>
+            <p>
+              We all live in a constant stream of change. The scale and the speed vary, but the
+              flow never stops — so really there are only two choices: actively steer the changes
+              that matter to you, or hope they come good on their own.
+            </p>
+          </div>
 
           <div className="space-y-6 text-lg leading-relaxed text-brand-dark">
             <p>
