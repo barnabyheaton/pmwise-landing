@@ -35,6 +35,39 @@ Concretely, every UI change must satisfy:
 Before considering any UI work done, verify contrast and keyboard/focus
 behaviour. If something can't meet AA, flag it explicitly instead of shipping.
 
+## Voice & messaging
+
+- **Tagline (organising idea)** — **"Enterprise capable, individual
+  accessible."** This is the spine of the story: it resolves the core tension
+  the product addresses (industrial-grade project rigour vs. a real person just
+  trying to change something in their life). Lead with it; let page structure
+  echo the two halves.
+- **Positioning** — Benefit-driven project management. Keep the *why* at the
+  centre; the method exists to serve the outcome, not the schedule/budget.
+- **Tone** — Honest, personal, plain-spoken, anti-jargon. Built in the open
+  from the Huon Valley, Tasmania. No hype, no guarantees — "just the method,
+  the journey, and the proof as it comes." Prefer plain words over enterprise
+  ceremony, even when describing enterprise-grade capability.
+- **Recurring proof points** — 70 years of project best practice; ~70% of
+  projects miss what they set out to do; "a whole team of delivery specialists
+  in one person's hands"; "the issues you most want to avoid are usually
+  exactly where your greatest value is hiding."
+
+## Typography
+
+Wired via `next/font/google` in `app/layout.jsx`, exposed as Tailwind tokens
+(`font-display`, `font-body`) in `tailwind.config.js`.
+
+- **Display / headings / UI** — **Bricolage Grotesque** (`font-display`).
+  Weights 400–800. Use for headings, eyebrows, labels, buttons, wordmark, and
+  large numeric moments (e.g. the "70%"). Tighten tracking on big headings
+  (~ -0.02em to -0.03em).
+- **Body / prose** — **Newsreader** (`font-body`, serif, incl. italic). The
+  default body font — suits the personal, essay-driven voice. Use for
+  paragraphs and long-form story copy.
+- Don't introduce additional families without updating this file and the
+  `next/font` setup. If a brand font is adopted later, replace here first.
+
 ## Brand — PMWise design kit
 
 Source of truth: `DESIGN.md` (Anymark brand kit). Key rules:
@@ -43,15 +76,21 @@ Source of truth: `DESIGN.md` (Anymark brand kit). Key rules:
   - primary `#58CC03` · dark `#1F2937` · white `#FFFFFF`
   - color-800 `#214B01` · color-700 `#367E02` · color-600 `#4CB003`
   - color-500 `#58CC03` · color-400 `#7BFC1D` · color-300 `#98FC4F`
-  - color-200 `#B6FD81` · color-100 `#D3FEB4`
+  - color-200 `#B6FD81` · color-100 `#D3FEB4` · color-50 `#F4FEE9`
+    (color-50 is the lightest tint — for soft surfaces / eyebrows)
 - **Token usage** — Primary tokens (`primary`, `dark`, `white`) should cover
   ~80% of surfaces. Don't reach for ad-hoc greys (`#374151`, `#6b7280`, etc.)
-  or off-brand greens (`#f0fdf4`); use `dark` and the palette shades.
+  or off-brand greens (`#f0fdf4`); use `dark` (with opacity, e.g. `dark/70`)
+  and the palette shades.
 - **Buttons** — primary: bg `color-700`, text white; hover bg `color-800`.
   secondary: white bg, `color-700` text; hover `color-800` text.
 - **Primary colour is functional, not decorative** — reserve `#58CC03` for
   CTAs, active states, and brand moments. Don't use it as body/wordmark text
-  (also fails contrast — see above).
+  (also fails contrast — see above). On the `#58CC03` CTA fill, use `dark`
+  (`#1F2937`) for text.
+- **Bright greens on dark** — `color-400`/`color-300` (`#7BFC1D`/`#98FC4F`)
+  are for accents/text on the `dark` (`#1F2937`) surface only, where contrast
+  passes. Don't use them on white.
 - **Logo** — prefer `pmwise_logo.svg`; `pmwise_logo_white.png` on dark/photo
   backgrounds. Don't rotate, distort, recolour, or add effects to the logo.
 
@@ -59,5 +98,5 @@ Source of truth: `DESIGN.md` (Anymark brand kit). Key rules:
 
 - Next.js (App Router) + Tailwind. Define brand colours as Tailwind theme
   tokens so there's a single source of truth; prefer them over inline hex.
-- `app/layout.jsx` owns the single `<html>`/`<body>`. Page components must
-  **not** render their own `<html>`/`<body>`.
+- `app/layout.jsx` owns the single `<html>`/`<body>` and the `next/font`
+  setup. Page components must **not** render their own `<html>`/`<body>`.
