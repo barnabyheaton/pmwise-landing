@@ -20,7 +20,13 @@ module.exports = {
           300: '#98FC4F',
           200: '#B6FD81',
           100: '#D3FEB4',
+          50: '#F4FEE9', // lightest brand tint — surfaces / eyebrows
         },
+      },
+      // Font tokens wired to next/font CSS variables set in app/layout.jsx.
+      fontFamily: {
+        display: ['var(--font-display)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', 'Georgia', 'serif'],
       },
     },
   },
