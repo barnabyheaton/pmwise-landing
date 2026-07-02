@@ -9,13 +9,19 @@ html {
 body {
   background-color: #ffffff;
   color: #1f2937; /* brand.dark */
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #d3feb4; /* brand.100 */
+  color: #1f2937;
 }
 
 /* WCAG 2.2 AA: always-visible, high-contrast keyboard focus indicator. */
 :focus-visible {
   outline: 3px solid #214b01; /* brand.800 — ≥3:1 against light surfaces */
-  outline-offset: 2px;
-  border-radius: 2px;
+  outline-offset: 3px;
+  border-radius: 3px;
 }
 
 /* Respect users who prefer reduced motion. */
