@@ -96,6 +96,30 @@ Source of truth: `DESIGN.md` (Anymark brand kit). Key rules:
 
 ## Stack notes
 
+## Two visual modes (decided)
+
+Two coordinated visual directions off the same brand. Pick per medium; where a
+surface supports theming, offer both.
+
+### 1B — "Dark Studio" (DEFAULT)
+Dark, punchy, high-contrast. For video production + the default theme for
+on-screen UI (dashboards, app).
+- Surface `#1F2937` · text `#FFFFFF` · secondary `#B6FD81`
+- Accents (on dark only) `#7BFC1D`, `#98FC4F`
+- Primary CTA `#58CC03` fill w/ `#113301` text, or `#1F2937` chips w/ white text
+- Motif: 16px `#58CC03` left accent bar; soft green radial glow; faint icon watermark ~6%.
+
+### 1A — "Light Editorial" (SECONDARY)
+Calm, premium. For printed materials/docs + the light-mode option.
+- Surface `#FFFFFF` · soft surface `#F4FEE9` · text `#1F2937` · secondary `rgba(31,41,55,0.7)`
+- Accents/links (on light) `#367E02`, `#4CB003`
+- Primary CTA `#367E02` fill white text; hover `#214B01`
+
+### Dashboard / app UI theming rule
+Default to 1B (dark); provide a light-mode switch to 1A. Same layout & component
+shapes across both — only swap the token set. Never `#58CC03` as text on white
+(use `#367E02`+); never `#7BFC1D`/`#98FC4F` on white (dark-surface only).
+
 - Next.js (App Router) + Tailwind. Define brand colours as Tailwind theme
   tokens so there's a single source of truth; prefer them over inline hex.
 - `app/layout.jsx` owns the single `<html>`/`<body>` and the `next/font`
