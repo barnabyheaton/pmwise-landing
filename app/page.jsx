@@ -249,15 +249,15 @@ export default function Home() {
         {/* ============ CTA ============ */}
         <section className="mx-auto max-w-[1120px] px-6 py-24">
           <div className="overflow-hidden rounded-[28px] bg-brand-500 px-8 py-[72px] text-center">
-            <h2 className="mx-auto mb-5 max-w-[18ch] font-display text-[clamp(34px,5.5vw,60px)] font-extrabold leading-none tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
+            <h2 className="mx-auto mb-5 max-w-[18ch] font-display text-[clamp(34px,5.5vw,60px)] font-extrabold leading-none tracking-[-0.03em] text-white [text-wrap:balance]">
               Got a change you&rsquo;d rather steer than hope through?
             </h2>
-            <p className="mx-auto mb-9 max-w-[44ch] text-[clamp(18px,2vw,22px)] leading-[1.5] text-brand-dark [text-wrap:pretty]">
+            <p className="mx-auto mb-9 max-w-[44ch] text-[clamp(18px,2vw,22px)] leading-[1.5] text-white/90 [text-wrap:pretty]">
               Come along. I&rsquo;ll send word as early access opens — no noise in between.
             </p>
             <a
               href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
-              className="inline-flex min-h-[56px] items-center whitespace-nowrap rounded-full bg-brand-800 px-9 font-display text-[18px] font-bold text-white shadow-md transition hover:-translate-y-px hover:bg-[#113301]"
+              className="inline-flex min-h-[56px] items-center whitespace-nowrap rounded-full bg-brand-800 px-9 font-display text-[18px] font-bold text-white shadow-md transition hover:-translate-y-px hover:bg-[#3A0311]"
             >
               Get on the early list
             </a>
