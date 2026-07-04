@@ -13,13 +13,13 @@ body {
 }
 
 ::selection {
-  background: #d3feb4; /* brand.100 */
+  background: #FCC0CF; /* brand.100 */
   color: #1f2937;
 }
 
 /* WCAG 2.2 AA: always-visible, high-contrast keyboard focus indicator. */
 :focus-visible {
-  outline: 3px solid #214b01; /* brand.800 — ≥3:1 against light surfaces */
+  outline: 3px solid #61051C; /* brand.800 — ≥3:1 against light surfaces */
   outline-offset: 3px;
   border-radius: 3px;
 }
