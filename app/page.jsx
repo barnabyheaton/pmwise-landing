@@ -198,7 +198,7 @@ export default function Home() {
         <section className="mx-auto max-w-[1120px] px-6 py-[72px]">
           <figure className="border-l-[5px] border-brand-600 py-2 pl-8">
             <blockquote className="max-w-[20ch] font-display text-[clamp(30px,5vw,58px)] font-bold leading-[1.05] tracking-[-0.025em] text-brand-dark [text-wrap:balance]">
-              This revolution will come from the ground up — not from the top down.
+              This revolution will come from the ground up — not the top down.
             </blockquote>
           </figure>
         </section>
