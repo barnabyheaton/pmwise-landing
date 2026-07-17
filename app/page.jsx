@@ -171,7 +171,7 @@ export default function Home() {
                 PMWISE busts the jargon, to show you the path, step by step.
               </p>
               <p className="text-[17.5px] leading-[1.55] text-brand-dark/70 [text-wrap:pretty]">
-                For seventy years project methods have built one another, and while the layers have
+                For seventy years project methods have built on one another, and while the layers have
                 got deeper, the results remain the same. PMWISE starts with a blank piece of paper,
                 learns the hard-won lessons, keeps what works and most importantly starts with your
                 all-important &lsquo;why&rsquo;.
