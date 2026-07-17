@@ -222,7 +222,7 @@ export default function Home() {
 
             <div className="text-[20px] leading-[1.62] text-brand-dark/80">
               <p className="mb-6 [text-wrap:pretty]">
-                When I first discovered project management practice 20+ years ago, I just got it.
+                When I first discovered project management 20+ years ago, I just got it.
                 It (Prince2) just made sense, so I have been digging deeper and making my way ever
                 since. But while it couldn&rsquo;t be clearer to me, no matter how many frameworks
                 exist, projects continue to show a stubborn average global failure rate of 70%
@@ -230,22 +230,22 @@ export default function Home() {
                 since.
               </p>
               <p className="mb-6 [text-wrap:pretty]">
-                The advent of accessible AI has given me the opportunity to take a{' '}
+                The advent of accessible AI has given us the opportunity to take a{' '}
                 <strong className="font-semibold text-brand-800">&lsquo;clean piece of
                 paper&rsquo; approach</strong> to the problem. To take all the best bits I have
-                seen, and to drop the bits which never worked. To put horses back in front of carts,
+                seen, and to drop the bits which never worked. To put the horses back in front of the carts,
                 and to incrementally build, test and release an application and methodology which
-                will remove the systemic blockages to project failure.
+                removes the systemic blockages creating project failure.
               </p>
               <p className="mb-6 [text-wrap:pretty]">
                 What we have built distils the essence of good practice rather than solving a
                 particular problem for a particular industry. It means PMWISE can deliver enterprise
-                grade grunt or it can help an individual get through a problem personal to them.
+                grade grunt or it can help an individual get through a problem, deeply personal to them.
               </p>
               <p className="mb-6 [text-wrap:pretty]">
                 From Problem to Plan. From Doing to Done. PMWISE acts as your trusted delivery
-                partner to build a genuine pathway to realise untapped rewards, and then helps you
-                travel the road, on budget and on time.
+                partner, building acheivable and comprehensive pathways to realise your untapped rewards, 
+                and then helps you travel the road, on time and on budget, from why to why not.
               </p>
             </div>
           </div>
