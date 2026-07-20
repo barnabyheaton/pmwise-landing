@@ -250,6 +250,35 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* ============ PHILOSOPHY BAND ============ */}
+        <section aria-labelledby="philo-h" className="mx-auto max-w-[1120px] px-6 pt-6">
+          <div className="relative overflow-hidden rounded-3xl bg-brand-dark p-8 sm:p-12">
+            <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-[-140px] -translate-y-1/2 h-[420px] w-[420px]">
+              <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
+              <div className="absolute inset-[20%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.11)' }} />
+              <div className="absolute inset-[40%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.09)' }} />
+              <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.28), rgba(236,0,63,0) 55%)', animation: 'radarSweep 8s linear infinite', transformOrigin: 'center' }} />
+            </div>
+            <div className="relative max-w-[640px]">
+              <div className="mb-5 inline-flex items-center gap-2.5 rounded-full px-4 py-[7px] font-display text-[13px] font-semibold tracking-wide" style={{ border: '1px solid rgba(255,143,163,0.35)', background: 'rgba(236,0,63,0.10)', color: '#FF8FA3' }}>
+                <span className="h-2 w-2 flex-none rounded-full bg-brand-500" aria-hidden="true" />
+                A generational leap, not another spreadsheet
+              </div>
+              <h2 id="philo-h" className="mb-[18px] max-w-[20ch] font-display text-[clamp(26px,3.6vw,36px)] font-bold leading-[1.1] tracking-[-0.02em] text-white">
+                PMWISE has a moral and ethical compass. Spreadsheets don&rsquo;t.
+              </h2>
+              <p className="mb-5 max-w-[58ch] text-[17px] leading-[1.55] text-white/90 [text-wrap:pretty]">
+                Every tool before PMWISE reduced projects to numbers in a grid. We built ours from a blank sheet, with AI, so purpose and ethics sit in the foundations — anchored in Australia&rsquo;s AI Ethics Framework and shaped by thinkers from Aristotle to the Toyota Production System. It doesn&rsquo;t just hold your cells. It holds your <em className="italic text-brand-300">why</em> — and keeps it honest.
+              </p>
+              <a
+                href="/philosophy"
+                className="inline-flex min-h-[48px] items-center whitespace-nowrap rounded-full bg-brand-500 px-[26px] font-display text-[16px] font-semibold text-white transition-colors hover:bg-brand-700"
+              >
+                See what&rsquo;s inside the black box →
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* ============ SECURITY BAND ============ */}
         <section aria-labelledby="security-h" className="mx-auto max-w-[1120px] px-6 pt-6">
