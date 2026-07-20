@@ -149,12 +149,12 @@ export default function Home() {
               deadline.{' '}
               <strong className="font-semibold text-brand-800">
                 At PMWISE.AI — your why stays the centre of everything we do.
-              </strong>{' '}
+              </strong>
               <a
                 href="/philosophy"
-                className="whitespace-nowrap font-semibold text-brand-700 underline underline-offset-[3px]"
+                className="mt-4 block font-semibold text-brand-700 underline underline-offset-[3px]"
               >
-                See the thinking inside →
+                Explore PMWISE&rsquo;s ethical, moral and philosophical radars &rarr;
               </a>
             </p>
           </div>
