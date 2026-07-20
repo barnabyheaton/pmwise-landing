@@ -92,20 +92,31 @@ export default function Security() {
 
       <main id="main">
         {/* ============ HERO ============ */}
-        <section className="mx-auto max-w-[900px] px-6 pb-10 pt-[72px]">
-          <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide text-brand-800">
-            <span className="h-2 w-2 flex-none rounded-full bg-brand-600" aria-hidden="true" />
-            Security Radar · Work in progress — published openly
+        <section className="relative overflow-hidden bg-brand-dark">
+          <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-[-180px] -translate-y-1/2 h-[620px] w-[620px]">
+            <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
+            <div className="absolute inset-[15%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.12)' }} />
+            <div className="absolute inset-[30%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.10)' }} />
+            <div className="absolute inset-[45%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.08)' }} />
+            <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.30), rgba(236,0,63,0) 55%)', animation: 'radarSweep 8s linear infinite', transformOrigin: 'center' }} />
+            <div className="absolute left-0 top-1/2 h-px w-full" style={{ background: 'rgba(255,143,163,0.10)' }} />
+            <div className="absolute top-0 left-1/2 h-full w-px" style={{ background: 'rgba(255,143,163,0.10)' }} />
           </div>
-          <h1 className="max-w-[16ch] font-display text-[clamp(38px,6.5vw,64px)] font-bold leading-[1.02] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
-            Security at PMWISE.AI
-          </h1>
-          <p className="mt-6 max-w-[56ch] text-[clamp(19px,2.1vw,23px)] leading-[1.55] text-brand-dark/80 [text-wrap:pretty]">
-            Security is not a feature we bolted on — it is the first thing we designed. This page is
-            our open, living register of what we do to stay secure. We publish it, gaps and all,
-            because a promise you can examine is the only honest basis for trust. It is a work in
-            progress and we will keep it current as we build.
-          </p>
+          <div className="relative mx-auto max-w-[900px] px-6 pb-20 pt-[88px]">
+            <div className="mb-7 inline-flex items-center gap-2.5 rounded-full px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide" style={{ border: '1px solid rgba(255,143,163,0.35)', background: 'rgba(236,0,63,0.10)', color: '#FF8FA3' }}>
+              <span className="h-2 w-2 flex-none rounded-full bg-brand-500" aria-hidden="true" />
+              Security Radar · Work in progress — published openly
+            </div>
+            <h1 className="max-w-[16ch] font-display text-[clamp(38px,6.5vw,64px)] font-bold leading-[1.02] tracking-[-0.03em] text-white [text-wrap:balance]">
+              Security at PMWISE.AI
+            </h1>
+            <p className="mt-6 max-w-[56ch] text-[clamp(19px,2.1vw,23px)] leading-[1.55] text-white/90 [text-wrap:pretty]">
+              Security is not a feature we bolted on — it is the first thing we designed. This page is
+              our open, living register of what we do to stay secure. We publish it, gaps and all,
+              because a promise you can examine is the only honest basis for trust. It is a work in
+              progress and we will keep it current as we build.
+            </p>
+          </div>
         </section>
 
         {/* ============ TWO LANES ============ */}
@@ -178,18 +189,26 @@ export default function Security() {
 
         {/* ============ CERTIFICATION ============ */}
         <section className="mx-auto max-w-[900px] px-6 py-6">
-          <div className="rounded-[22px] bg-brand-dark p-10">
-            <h2 className="mb-3.5 font-display text-[clamp(24px,3vw,30px)] font-bold tracking-tight text-white">
-              Certification when you need it
-            </h2>
-            <p className="text-[17px] leading-[1.6] text-white/85 [text-wrap:pretty]">
-              We build to 80%+ of what IRAP, the Essential Eight and SOC 2 require by design, and
-              keep the evidence ready. We take the final certifying step — independent penetration
-              testing and formal audit — when an enterprise or government client requires it.{' '}
-              <strong className="font-semibold text-brand-200">
-                We are not certified yet, and we say so plainly.
-              </strong>
-            </p>
+          <div className="relative overflow-hidden rounded-[22px] bg-brand-dark p-10">
+            <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-[-120px] -translate-y-1/2 h-[360px] w-[360px]">
+              <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
+              <div className="absolute inset-[22%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.11)' }} />
+              <div className="absolute inset-[44%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.09)' }} />
+              <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.28), rgba(236,0,63,0) 55%)', animation: 'radarSweep 8s linear infinite', transformOrigin: 'center' }} />
+            </div>
+            <div className="relative">
+              <h2 className="mb-3.5 font-display text-[clamp(24px,3vw,30px)] font-bold tracking-tight text-white">
+                Certification when you need it
+              </h2>
+              <p className="max-w-[60ch] text-[17px] leading-[1.6] text-white/85 [text-wrap:pretty]">
+                We build to 80%+ of what IRAP, the Essential Eight and SOC 2 require by design, and
+                keep the evidence ready. We take the final certifying step — independent penetration
+                testing and formal audit — when an enterprise or government client requires it.{' '}
+                <strong className="font-semibold text-brand-200">
+                  We are not certified yet, and we say so plainly.
+                </strong>
+              </p>
+            </div>
           </div>
         </section>
 
@@ -257,22 +276,12 @@ export default function Security() {
           </div>
           <p className="text-[15px] text-brand-dark/70">© 2026 PMWISE.AI · Huon Valley, Tasmania</p>
           <div className="flex items-center gap-5">
-            <a
-              href="https://www.linkedin.com/company/pmwise-ai/"
-              className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise"
-              className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]"
-            >
-              support@pmwise.ai
-            </a>
+            <a href="https://www.linkedin.com/company/pmwise-ai/" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">LinkedIn</a>
+            <a href="/philosophy" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">Philosophy</a>
+            <a href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">support@pmwise.ai</a>
           </div>
         </div>
       </footer>
     </div>
   )
 }
-
