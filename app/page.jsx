@@ -108,10 +108,11 @@ export default function Home() {
           >
             Every change runs on the same simple loop.
           </h2>
-          <p className="mt-[18px] max-w-[52ch] text-[19px] leading-[1.5] text-brand-dark/70 [text-wrap:pretty]">
-            A person, a team, an organisation — the shape underneath is identical. The trouble has
-            always been what happens <em className="italic">after</em> step four.
-          </p>
+              <p className="mt-[18px] max-w-[52ch] text-[19px] leading-[1.5] text-brand-dark/70 [text-wrap:pretty]">
+                A person, a team, an organisation — the shape underneath is identical. The trouble starts
+                when people unintentionally build <em className="italic">bad</em> plans — and then
+                successfully put them in motion.
+              </p>
 
           <ol className="mt-11 grid list-none grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <li className="rounded-[18px] border border-brand-dark/10 bg-white p-7">
@@ -124,10 +125,10 @@ export default function Home() {
               <h3 className="mb-2 font-display text-xl font-bold tracking-tight text-brand-dark">Picture better</h3>
               <p className="text-base leading-[1.45] text-brand-dark/70">You imagine a place you&rsquo;d rather be.</p>
             </li>
-            <li className="rounded-[18px] border border-brand-dark/10 bg-white p-7">
+            <li className="rounded-[18px] border border-brand-100 bg-brand-50 p-7">
               <div className="mb-5 font-display text-[15px] font-bold text-brand-700" aria-hidden="true">03</div>
               <h3 className="mb-2 font-display text-xl font-bold tracking-tight text-brand-dark">Build a plan</h3>
-              <p className="text-base leading-[1.45] text-brand-dark/70">A way to get from here to there.</p>
+              <p className="text-base leading-[1.45] text-brand-800">A way to get from here to there — but is it the <em className="italic">right</em> way?</p>
             </li>
             <li className="rounded-[18px] border border-brand-300 bg-brand-100 p-7">
               <div className="mb-5 font-display text-[15px] font-bold text-brand-800" aria-hidden="true">04</div>
