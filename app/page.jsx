@@ -49,7 +49,7 @@ export default function Home() {
         <section className="relative overflow-hidden mx-auto max-w-[1120px] px-6 pb-10 pt-[72px]">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute top-1/2 right-[-240px] h-[720px] w-[720px] -translate-y-1/2"
+            className="pointer-events-none absolute top-1/2 right-[-180px] h-[1000px] w-[1000px] -translate-y-1/2"
           >
             <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(236,0,63,0.16)' }} />
             <div className="absolute inset-[16%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.13)' }} />
@@ -67,11 +67,11 @@ export default function Home() {
             Enterprise capable · Individually crafted · Traceable Benefit Realisation
           </div>
 
-          <h1 className="max-w-[14ch] font-display text-[clamp(44px,8vw,92px)] font-bold leading-[0.98] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
+          <h1 className="max-w-[14ch] font-display text-[clamp(40px,6vw,76px)] font-bold leading-[0.98] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
             &ldquo;Life is a project.&rdquo;
           </h1>
 
-          <p className="mt-6 max-w-[40ch] text-[clamp(20px,2.4vw,27px)] leading-[1.45] text-brand-dark/80 [text-wrap:pretty]">
+          <p className="mt-6 max-w-[40ch] text-[clamp(18px,2vw,23px)] leading-[1.45] text-brand-dark/80 [text-wrap:pretty]">
             Change is life&rsquo;s only constant (panta rhei &mdash; Heraclitus 500 BCE). You can choose to try and steer the changes
             happening in your life and your business — or you can sit back and hope everything works
             out somehow. PMWISE learns the lesson of{' '}
