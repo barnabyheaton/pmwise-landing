@@ -69,8 +69,15 @@ export default function PricingPage() {
         <div className="absolute left-0 top-0 bottom-0 w-4 bg-brand-primary" />
         <div className="relative grid items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-brand-darkAccent1/35 bg-brand-primary/10 px-4 py-2 text-[13px] font-semibold text-brand-darkAccent1">
-              <span className="h-2 w-2 rounded-full bg-brand-primary" />
+            <div
+              className="mb-6 inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-[13px] font-semibold"
+              style={{
+                color: '#FF8FA3',
+                background: 'rgba(236,0,63,0.10)',
+                border: '1px solid rgba(255,143,163,0.35)',
+              }}
+            >
+              <span className="h-2 w-2 rounded-full" style={{ background: '#EC003F' }} />
               Coming soon · Simple, honest pricing
             </div>
             <h1 className="max-w-[15ch] font-display text-[clamp(38px,5vw,52px)] font-bold leading-[1.0] tracking-tight text-white [text-wrap:balance]">
@@ -87,9 +94,18 @@ export default function PricingPage() {
                 aria-hidden="true"
                 className="pointer-events-none absolute left-1/2 top-1/2 h-[460px] w-[460px] -translate-x-1/2 -translate-y-1/2"
               >
-                <div className="absolute inset-0 rounded-full border border-brand-darkAccent1/[0.14]" />
-                <div className="absolute inset-[20%] rounded-full border border-brand-darkAccent1/[0.12]" />
-                <div className="absolute inset-[40%] rounded-full border border-brand-darkAccent1/[0.10]" />
+                <div
+                  className="absolute inset-0 rounded-full"
+                  style={{ border: '1px solid rgba(255,143,163,0.14)' }}
+                />
+                <div
+                  className="absolute inset-[20%] rounded-full"
+                  style={{ border: '1px solid rgba(255,143,163,0.12)' }}
+                />
+                <div
+                  className="absolute inset-[40%] rounded-full"
+                  style={{ border: '1px solid rgba(255,143,163,0.10)' }}
+                />
                 <div
                   className="absolute inset-0 rounded-full motion-safe:animate-[radarSweep_9s_linear_infinite]"
                   style={{
@@ -105,10 +121,13 @@ export default function PricingPage() {
                 5
               </span>
             </div>
-            <div className="mt-[18px] text-[18px] font-semibold uppercase tracking-[0.06em] text-brand-darkAccent1">
+            <div
+              className="relative mt-[18px] text-[18px] font-semibold uppercase tracking-[0.06em]"
+              style={{ color: '#FF8FA3' }}
+            >
               per read/write member · per month
             </div>
-            <div className="mt-1.5 text-[15px] text-white/60">
+            <div className="relative mt-1.5 text-[15px] text-white/60">
               GST &amp; card fees already in · read-only is free
             </div>
           </div>
