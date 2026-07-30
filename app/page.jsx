@@ -3,7 +3,7 @@ import pmwiseIcon from './pmwise_icon_color.png'
 export const metadata = {
   title: 'PMWISE.AI — Life is a project',
   description:
-    'Enterprise capable, individually crafted, traceable benefit realisation. PMWISE learns 70 years of project best practice, innovates with AI, and puts the results in the hands of its clients.',
+    'Enterprise capable, individual accessible. PMWISE.AI puts 70 years of project best practice in the hands of one person — with the why at the centre.',
 }
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
               href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
               className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-brand-700 px-[18px] font-display text-[15px] font-semibold text-white transition-colors hover:bg-brand-800"
             >
-              Speak to our founder
+              Get early access
             </a>
           </nav>
         </div>
@@ -43,20 +43,18 @@ export default function Home() {
         <section className="mx-auto max-w-[1120px] px-6 pb-10 pt-[72px]">
           <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide text-brand-800">
             <span className="h-2 w-2 flex-none rounded-full bg-brand-600" aria-hidden="true" />
-            Enterprise capable · Individually crafted · Traceable Benefit Realisation
+            Enterprise capable · Individual accessible
           </div>
 
           <h1 className="max-w-[14ch] font-display text-[clamp(44px,8vw,92px)] font-bold leading-[0.98] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
-            &ldquo;Life is a project.&rdquo;
+            Life is a project.
           </h1>
 
           <p className="mt-6 max-w-[40ch] text-[clamp(20px,2.4vw,27px)] leading-[1.45] text-brand-dark/80 [text-wrap:pretty]">
-            Change is life&rsquo;s only certainty. You can choose to try and steer the changes
-            happening in your life and your business — or you can sit back and hope everything works
-            out somehow. PMWISE learns the lesson of{' '}
-            <strong className="font-semibold text-brand-dark">70 years of project management best
-            practice</strong>, innovates with the power of AI and then puts the results in the hands
-            of its clients.
+            You can steer the change that matters to you — or sit back and hope it works out.
+            PMWISE.AI puts <strong className="font-semibold text-brand-dark">70 years of project
+            best practice</strong> in the hands of one person, with the{' '}
+            <em className="italic text-brand-800">why</em> at the centre.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3.5">
@@ -64,13 +62,13 @@ export default function Home() {
               href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
               className="inline-flex min-h-[52px] items-center whitespace-nowrap rounded-full bg-brand-700 px-[30px] font-display text-[17px] font-semibold text-white shadow-sm transition hover:-translate-y-px hover:bg-brand-800"
             >
-              Contact our founder to learn more
+              Get on the early list
             </a>
             <a
               href="#story"
               className="inline-flex min-h-[52px] items-center whitespace-nowrap rounded-full border-[1.5px] border-brand-200 bg-white px-[26px] font-display text-[17px] font-semibold text-brand-800 transition hover:border-brand-600 hover:bg-brand-50"
             >
-              Read our story →
+              Read the story →
             </a>
           </div>
         </section>
@@ -79,7 +77,7 @@ export default function Home() {
         <section aria-label="The research" className="mx-auto mt-10 max-w-[1120px] px-6">
           <div className="grid grid-cols-1 items-center gap-10 rounded-3xl bg-brand-dark p-8 sm:p-12 md:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <div className="font-display text-[clamp(88px,13vw,150px)] font-extrabold leading-[0.85] tracking-[-0.04em] text-brand-500">
+              <div className="font-display text-[clamp(88px,13vw,150px)] font-extrabold leading-[0.85] tracking-[-0.04em] text-brand-400">
                 70%
               </div>
               <div className="mt-4 font-display text-[15px] font-semibold uppercase tracking-[0.08em] text-brand-200">
@@ -90,8 +88,7 @@ export default function Home() {
               Seventy years of project management, and the research keeps hitting the same ceiling:
               projects that fixate on <em className="italic text-brand-300">how much</em> and{' '}
               <em className="italic text-brand-300">how long</em> miss what they set out to do about
-              seven times in ten. And even for the projects which do hit the mark, more often than
-              not the <strong className="font-semibold text-white">&lsquo;why&rsquo;</strong> gets
+              seven times in ten. The <strong className="font-semibold text-white">why</strong> gets
               lost in the noise.
             </p>
           </div>
@@ -108,16 +105,16 @@ export default function Home() {
           >
             Every change runs on the same simple loop.
           </h2>
-              <p className="mt-[18px] max-w-[52ch] text-[19px] leading-[1.5] text-brand-dark/70 [text-wrap:pretty]">
-                A person, a team, an organisation — the shape underneath is identical. The trouble starts
-                when people unintentionally build <em className="italic">bad</em> plans — and then
-                successfully put them in motion.
-              </p>
+          <p className="mt-[18px] max-w-[52ch] text-[19px] leading-[1.5] text-brand-dark/70 [text-wrap:pretty]">
+            A person, a team, an organisation — the shape underneath is identical. The trouble starts
+            when people unintentionally build <em className="italic">bad</em> plans — and then
+            successfully put them in motion.
+          </p>
 
           <ol className="mt-11 grid list-none grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <li className="rounded-[18px] border border-brand-dark/10 bg-white p-7">
               <div className="mb-5 font-display text-[15px] font-bold text-brand-700" aria-hidden="true">01</div>
-              <h3 className="mb-2 font-display text-xl font-bold tracking-tight text-brand-dark">Feel the pain</h3>
+              <h3 className="mb-2 font-display text-xl font-bold tracking-tight text-brand-dark">Feel a pain</h3>
               <p className="text-base leading-[1.45] text-brand-dark/70">Something isn&rsquo;t right. It needs to change.</p>
             </li>
             <li className="rounded-[18px] border border-brand-dark/10 bg-white p-7">
@@ -133,7 +130,7 @@ export default function Home() {
             <li className="rounded-[18px] border border-brand-300 bg-brand-100 p-7">
               <div className="mb-5 font-display text-[15px] font-bold text-brand-800" aria-hidden="true">04</div>
               <h3 className="mb-2 font-display text-xl font-bold tracking-tight text-brand-dark">Put it in motion</h3>
-              <p className="text-base leading-[1.45] text-brand-800">And this is where it usually breaks 70% of the time. Why?</p>
+              <p className="text-base leading-[1.45] text-brand-800">And this is where it usually breaks.</p>
             </li>
           </ol>
 
@@ -142,21 +139,13 @@ export default function Home() {
               →
             </div>
             <p className="text-[clamp(18px,2vw,22px)] leading-[1.5] text-brand-dark [text-wrap:pretty]">
-              Think of every building/renovation show you&rsquo;ve ever seen. The script is always
-              the same — <em className="italic">how long and how much</em>. No one ever asks why.
-              When you fix your time and cost first, you think you can shoe-horn everything else
-              between those two rigid bookends. Well guess what, you can&rsquo;t. At PMWISE we talk
-              about time and money last, because we want to solve your problem, not hit a dramatic
-              deadline.{' '}
+              The focus snaps to <em className="italic">how long</em> and <em className="italic">how much</em>, and from
+              there that&rsquo;s how the whole thing gets run. Projects go rigid, lose focus, or deliver the
+              opposite of what set them off.{' '}
               <strong className="font-semibold text-brand-800">
-                At PMWISE.AI — your why stays the centre of everything we do.
+                PMWISE.AI is built the other way round — the why stays the centre and the core of
+                everything that follows.
               </strong>
-              <a
-                href="/philosophy"
-                className="mt-4 block font-semibold text-brand-700 underline underline-offset-[3px]"
-              >
-                Explore PMWISE&rsquo;s ethical, moral and philosophical radars &rarr;
-              </a>
             </p>
           </div>
         </section>
@@ -175,27 +164,23 @@ export default function Home() {
                 Enterprise capable
               </div>
               <p className="mb-4 font-display text-[clamp(22px,2.6vw,28px)] font-semibold leading-[1.2] tracking-tight text-brand-dark">
-                PMWISE busts the jargon, to show you the path, step by step.
+                The rigour, kept. The jargon, dropped.
               </p>
               <p className="text-[17.5px] leading-[1.55] text-brand-dark/70 [text-wrap:pretty]">
-                For seventy years project methods have built on one another, and while the layers have
-                got deeper, the results remain the same. PMWISE starts with a blank piece of paper,
-                learns the hard-won lessons, keeps what works and most importantly starts with your
-                all-important &lsquo;why&rsquo;.
+                Seventy years of delivery discipline distilled down to the parts that genuinely work
+                — the methods, the checks, the hard-won lessons of bad project practice.
               </p>
             </div>
             <div className="rounded-[22px] bg-brand-dark p-10">
               <div className="mb-[18px] font-display text-[13px] font-bold uppercase tracking-[0.1em] text-brand-400">
-                Individually crafted
+                Individual accessible
               </div>
               <p className="mb-4 font-display text-[clamp(22px,2.6vw,28px)] font-semibold leading-[1.2] tracking-tight text-white">
-                When you have a whole delivery team in the palm of your hand, one size does fit all.
+                A whole team of trusted advisors, in one person&rsquo;s hands.
               </p>
               <p className="text-[17.5px] leading-[1.55] text-white/85 [text-wrap:pretty]">
-                PMWISE has shown AI the right way to deliver projects regardless of their context.
-                This means PMWISE can help shape your project to your needs, your context, and your
-                goals. It can travel at your pace, and it can scale from solo-hobbyists to entire
-                enterprise teams.
+                No industrial language, no enterprise ceremony. AI puts a team of specialists beside
+                you in plain words, so you can name the future you&rsquo;re actually trying to reach.
               </p>
             </div>
           </div>
@@ -203,10 +188,30 @@ export default function Home() {
 
         {/* ============ PULL QUOTE ============ */}
         <section className="mx-auto max-w-[1120px] px-6 py-[72px]">
-          <figure className="border-l-[5px] border-brand-600 py-2 pl-8">
-            <blockquote className="max-w-[20ch] font-display text-[clamp(30px,5vw,58px)] font-bold leading-[1.05] tracking-[-0.025em] text-brand-dark [text-wrap:balance]">
-              This revolution will come from the ground up — not the top down.
-            </blockquote>
+          <figure className="relative overflow-hidden border-l-[5px] border-brand-600 py-2 pl-8">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute top-1/2 right-[-120px] h-[400px] w-[400px] -translate-y-1/2"
+            >
+              <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(236,0,63,0.14)' }} />
+              <div className="absolute inset-[20%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.11)' }} />
+              <div className="absolute inset-[40%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.09)' }} />
+              <div
+                className="absolute inset-0 rounded-full motion-safe:animate-[radarSweep_8s_linear_infinite]"
+                style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.16), rgba(236,0,63,0) 55%)', transformOrigin: 'center' }}
+              />
+            </div>
+            <div className="relative">
+              <blockquote className="max-w-[20ch] font-display text-[clamp(30px,5vw,58px)] font-bold leading-[1.05] tracking-[-0.025em] text-brand-dark [text-wrap:balance]">
+                A whole team of trusted advisors, for the price of a sushi roll.
+              </blockquote>
+              <a
+                href="/pricing"
+                className="mt-7 inline-flex items-center font-display text-[18px] font-semibold text-brand-600 hover:text-brand-800"
+              >
+                Explore our pricing →
+              </a>
+            </div>
           </figure>
         </section>
 
@@ -218,144 +223,64 @@ export default function Home() {
         >
           <div className="mx-auto max-w-[720px] px-6 py-[88px]">
             <p className="mb-3.5 font-display text-sm font-semibold uppercase tracking-[0.1em] text-brand-700">
-              Why I am building this
+              Why I&rsquo;m building this
             </p>
             <h2
               id="story-h"
               className="mb-8 max-w-[18ch] font-display text-[clamp(28px,4vw,42px)] font-bold leading-[1.08] tracking-[-0.02em] text-brand-dark"
             >
-              Twenty years to build a better PM mousetrap.
+              Twenty years inside these projects.
             </h2>
 
             <div className="text-[20px] leading-[1.62] text-brand-dark/80">
               <p className="mb-6 [text-wrap:pretty]">
-                When I first discovered project management 20+ years ago, I just got it.
-                It (Prince2) just made sense, so I have been digging deeper and making my way ever
-                since. But while it couldn&rsquo;t be clearer to me, no matter how many frameworks
-                exist, projects continue to show a stubborn average global failure rate of 70%
-                (Standish CHAOS report 2020). This is a puzzle I have been trying to solve ever
-                since.
+                I started out wanting to help enterprises rewire how they work. But somewhere in the
+                building I realised the real power is bigger than that. It isn&rsquo;t only to keep the
+                pieces of project practice that genuinely work, and put benefits and rewards back at
+                the heart of things.
               </p>
               <p className="mb-6 [text-wrap:pretty]">
-                The advent of accessible AI has given us the opportunity to take a{' '}
-                <strong className="font-semibold text-brand-800">&lsquo;clean piece of
-                paper&rsquo; approach</strong> to the problem. To take all the best bits I have
-                seen, and to drop the bits which never worked. To put the horses back in front of the carts,
-                and to incrementally build, test and release an application and methodology which
-                removes the systemic blockages creating project failure.
+                It&rsquo;s also to show people something they rarely get told:{' '}
+                <strong className="font-semibold text-brand-800">
+                  the issues you most want to avoid are usually exactly where your greatest value is
+                  hiding.
+                </strong>
               </p>
               <p className="mb-6 [text-wrap:pretty]">
-                What we have built distils the essence of good practice rather than solving a
-                particular problem for a particular industry. It means PMWISE can deliver enterprise
-                grade grunt or it can help an individual get through a problem, deeply personal to them.
-              </p>
-              <p className="mb-6 [text-wrap:pretty]">
-                From Problem to Plan. From Doing to Done. PMWISE acts as your trusted delivery
-                partner, building acheivable and comprehensive pathways to realise your untapped rewards, 
-                and then helps you travel the road, on time and on budget, from why to why not.
+                The power of this tool might one day help enterprises change — but that kind of change
+                comes from the ground up. Its real power is to help <em className="italic">individuals</em>{' '}
+                manage the changes in their own lives: 70 years of best practice, a whole team of
+                trusted advisors, and a way to describe the future you&rsquo;re actually trying to
+                reach — built on the real <em className="italic">why</em> underneath the thing you&rsquo;re
+                trying to resolve.
               </p>
             </div>
-          </div>
-        </section>
-        {/* ============ PHILOSOPHY BAND ============ */}
-        <section aria-labelledby="philo-h" className="mx-auto max-w-[1120px] px-6 pt-6">
-          <div className="relative overflow-hidden rounded-3xl bg-brand-dark p-8 sm:p-12">
-            <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-[-140px] -translate-y-1/2 h-[420px] w-[420px]">
-              <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
-              <div className="absolute inset-[20%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.11)' }} />
-              <div className="absolute inset-[40%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.09)' }} />
-              <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.28), rgba(236,0,63,0) 55%)', animation: 'radarSweep 8s linear infinite', transformOrigin: 'center' }} />
-            </div>
-            <div className="relative max-w-[640px]">
-              <div className="mb-5 inline-flex items-center gap-2.5 rounded-full px-4 py-[7px] font-display text-[13px] font-semibold tracking-wide" style={{ border: '1px solid rgba(255,143,163,0.35)', background: 'rgba(236,0,63,0.10)', color: '#FF8FA3' }}>
-                <span className="h-2 w-2 flex-none rounded-full bg-brand-500" aria-hidden="true" />
-                A generational leap, not another spreadsheet
-              </div>
-              <h2 id="philo-h" className="mb-[18px] max-w-[20ch] font-display text-[clamp(26px,3.6vw,36px)] font-bold leading-[1.1] tracking-[-0.02em] text-white">
-                PMWISE has a moral and ethical compass. Spreadsheets don&rsquo;t.
-              </h2>
-              <p className="mb-5 max-w-[58ch] text-[17px] leading-[1.55] text-white/90 [text-wrap:pretty]">
-                Every tool before PMWISE reduced projects to numbers in a grid. We built ours from a blank sheet, with AI, so purpose and ethics sit in the foundations — anchored in Australia&rsquo;s AI Ethics Framework and shaped by thinkers from Aristotle to the Toyota Production System. It doesn&rsquo;t just hold your cells. It holds your <em className="italic text-brand-300">why</em> — and keeps it honest.
-              </p>
-              <a
-                href="/philosophy"
-                className="inline-flex min-h-[48px] items-center whitespace-nowrap rounded-full bg-brand-500 px-[26px] font-display text-[16px] font-semibold text-white transition-colors hover:bg-brand-700"
-              >
-                See what&rsquo;s inside the black box →
-              </a>
-            </div>
-          </div>
-        </section>
 
-        {/* ============ SECURITY BAND ============ */}
-        <section aria-labelledby="security-h" className="mx-auto max-w-[1120px] px-6 pt-6">
-          <div className="rounded-3xl border border-brand-200 bg-brand-50 p-8 sm:p-12">
-            <div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-brand-200 bg-white px-4 py-[7px] font-display text-[13px] font-semibold tracking-wide text-brand-800">
-              <span className="h-2 w-2 flex-none rounded-full bg-brand-600" aria-hidden="true" />
-              Security · Protecting us and protecting you.
+            <div className="mt-10 flex items-start gap-[18px] rounded-[18px] border border-brand-dark/10 bg-white px-8 py-7">
+              <img src={pmwiseIcon.src} alt="" width={40} height={40} className="h-10 w-10 flex-none" />
+              <p className="text-[17px] italic leading-[1.55] text-brand-dark/70">
+                Built in the open, on my own, from the Huon Valley in Tasmania — with a lot of help
+                from AI and no shortage of mistakes. No hype, no guarantees. Just the method, the
+                journey, and the proof as it comes.
+              </p>
             </div>
-            <h2
-              id="security-h"
-              className="mb-[18px] max-w-[20ch] font-display text-[clamp(26px,3.6vw,36px)] font-bold leading-[1.1] tracking-[-0.02em] text-brand-dark"
-            >
-              Your security is our first consideration, not an afterthought.
-            </h2>
-            <p className="mb-7 max-w-[62ch] text-[17px] leading-[1.55] text-brand-dark/80 [text-wrap:pretty]">
-              Security ultimately protects two things:{' '}
-              <strong className="font-semibold text-brand-dark">you</strong>, and the{' '}
-              <strong className="font-semibold text-brand-dark">platform</strong> you trust with
-              your work. We keep one open register of everything we do in both — what is live today,
-              what we are still building, and where the gaps are. We publish it because a promise you
-              can examine is the only honest basis for trust.
-            </p>
-            <div className="mb-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
-              <div>
-                <div className="mb-2.5 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-brand-700">
-                  Protecting you
-                </div>
-                <p className="text-[15.5px] leading-[1.5] text-brand-dark">
-                  Every document is private and isolated — encrypted in transit and at rest, uploads
-                  scanned for malware before use.
-                </p>
-              </div>
-              <div>
-                <div className="mb-2.5 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-brand-700">
-                  Protecting the platform
-                </div>
-                <p className="text-[15.5px] leading-[1.5] text-brand-dark">
-                  Untrusted content can&rsquo;t hijack our AI. Secrets never reach your browser.
-                  Database access is locked down.
-                </p>
-              </div>
-            </div>
-            <p className="mb-6 text-[15px] leading-[1.5] text-brand-800">
-              PMWISE is built to enterprise and government-grade standards by design, and will take
-              the final certifying step — independent penetration testing, IRAP, SOC 2 — when an
-              enterprise client needs it. We are not certified yet, and we say so plainly.
-            </p>
-            <a
-              href="/security"
-              className="inline-flex min-h-[48px] items-center whitespace-nowrap rounded-full bg-brand-700 px-[26px] font-display text-[16px] font-semibold text-white transition-colors hover:bg-brand-800"
-            >
-              Read our Security Radar →
-            </a>
           </div>
         </section>
 
         {/* ============ CTA ============ */}
         <section className="mx-auto max-w-[1120px] px-6 py-24">
           <div className="overflow-hidden rounded-[28px] bg-brand-500 px-8 py-[72px] text-center">
-            <h2 className="mx-auto mb-5 max-w-[18ch] font-display text-[clamp(34px,5.5vw,60px)] font-extrabold leading-none tracking-[-0.03em] text-white [text-wrap:balance]">
-              Got a change you&rsquo;d want to manage like a pro?
+            <h2 className="mx-auto mb-5 max-w-[18ch] font-display text-[clamp(34px,5.5vw,60px)] font-extrabold leading-none tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
+              Got a change you&rsquo;d rather steer than hope through?
             </h2>
-            <p className="mx-auto mb-9 max-w-[44ch] text-[clamp(18px,2vw,22px)] leading-[1.5] text-white/90 [text-wrap:pretty]">
-              While we&rsquo;re still building a better way, we&rsquo;d love to hear from you.
+            <p className="mx-auto mb-9 max-w-[44ch] text-[clamp(18px,2vw,22px)] leading-[1.5] text-brand-dark [text-wrap:pretty]">
+              Come along. I&rsquo;ll send word as early access opens — no noise in between.
             </p>
             <a
               href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
-              className="inline-flex min-h-[56px] items-center whitespace-nowrap rounded-full bg-brand-800 px-9 font-display text-[18px] font-bold text-white shadow-md transition hover:-translate-y-px hover:bg-[#3A0311]"
+              className="inline-flex min-h-[56px] items-center whitespace-nowrap rounded-full bg-brand-800 px-9 font-display text-[18px] font-bold text-white shadow-md transition hover:-translate-y-px hover:bg-[#113301]"
             >
-              Become a part of the PMWISE community.
+              Get on the early list
             </a>
           </div>
         </section>
@@ -371,26 +296,12 @@ export default function Home() {
             </span>
           </div>
           <p className="text-[15px] text-brand-dark/70">© 2026 PMWISE.AI · Huon Valley, Tasmania</p>
-          <div className="flex items-center gap-5">
-            <a
-              href="https://www.linkedin.com/company/pmwise-ai/"
-              className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="/security"
-              className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]"
-            >
-              Security
-            </a>
-            <a
-              href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise"
-              className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]"
-            >
-              support@pmwise.ai
-            </a>
-          </div>
+          <a
+            href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise"
+            className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]"
+          >
+            support@pmwise.ai
+          </a>
         </div>
       </footer>
     </div>
