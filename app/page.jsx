@@ -46,7 +46,22 @@ export default function Home() {
       <span id="top" />
       <main id="main">
         {/* ============ HERO ============ */}
-        <section className="mx-auto max-w-[1120px] px-6 pb-10 pt-[72px]">
+        <section className="relative overflow-hidden mx-auto max-w-[1120px] px-6 pb-10 pt-[72px]">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute top-1/2 right-[-240px] h-[720px] w-[720px] -translate-y-1/2"
+          >
+            <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(236,0,63,0.16)' }} />
+            <div className="absolute inset-[16%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.13)' }} />
+            <div className="absolute inset-[33%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.11)' }} />
+            <div className="absolute inset-[50%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.10)' }} />
+            <div className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-primary" style={{ boxShadow: '0 0 16px 2px rgba(236,0,63,0.4)' }} />
+            <div
+              className="absolute inset-0 rounded-full motion-safe:animate-[radarSweep_6s_linear_infinite]"
+              style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.22), rgba(236,0,63,0) 55%)', transformOrigin: 'center' }}
+            />
+          </div>
+          <div className="relative">
           <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide text-brand-800">
             <span className="h-2 w-2 flex-none rounded-full bg-brand-600" aria-hidden="true" />
             Enterprise capable · Individually crafted · Traceable Benefit Realisation
@@ -57,7 +72,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-[40ch] text-[clamp(20px,2.4vw,27px)] leading-[1.45] text-brand-dark/80 [text-wrap:pretty]">
-            Change is life&rsquo;s only certainty. You can choose to try and steer the changes
+            Change is life&rsquo;s only constant (panta rhei &mdash; Heraclitus 500 BCE). You can choose to try and steer the changes
             happening in your life and your business — or you can sit back and hope everything works
             out somehow. PMWISE learns the lesson of{' '}
             <strong className="font-semibold text-brand-dark">70 years of project management best
@@ -78,6 +93,7 @@ export default function Home() {
             >
               Read our story →
             </a>
+          </div>
           </div>
         </section>
 
