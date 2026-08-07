@@ -5,6 +5,9 @@ No design, no marketing copy — that's yours. Captured 7 August 2026 against
 `pmwise-app` @ `ee158bc`.
 
 ```
+what-were-building.md   START HERE. What PMWise is for and why it works the way it does,
+                        in the product's own vocabulary. The other docs describe what the
+                        product does; this one is what it is for.
 demo-scenario.md        The one seeded project behind every asset, and how it was produced.
                         READ THE "HOW THIS WAS PRODUCED" SECTION — there is one caveat
                         about the AI-written prose that affects what you can claim.
