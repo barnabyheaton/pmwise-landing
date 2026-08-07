@@ -1,9 +1,9 @@
 import pmwiseIcon from './pmwise_icon_color.png'
 
 export const metadata = {
-  title: 'PMWISE.AI — Life is a project',
+  title: 'PMWISE.AI — A whole team of trusted advisors, for less than a sushi roll',
   description:
-    'Enterprise capable, individually crafted, traceable benefit realisation. PMWISE learns 70 years of project best practice, innovates with AI, and puts the results in the hands of its clients.',
+    'PMWISE turns 70 years of project management best practice into an AI that takes you from a problem worth solving to a plan worth funding. $5 a month.',
 }
 
 export default function Home() {
@@ -46,10 +46,10 @@ export default function Home() {
       <span id="top" />
       <main id="main">
         {/* ============ HERO ============ */}
-        <section className="relative overflow-hidden mx-auto max-w-[1120px] px-6 pb-10 pt-[72px]">
+        <section className="relative overflow-hidden pb-10 pt-[72px]">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute top-1/2 right-[-180px] h-[1000px] w-[1000px] -translate-y-1/2"
+            className="pointer-events-none absolute top-1/2 right-1/2 mr-[-740px] h-[1000px] w-[1000px] -translate-y-1/2"
           >
             <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(236,0,63,0.16)' }} />
             <div className="absolute inset-[16%] rounded-full" style={{ border: '1px solid rgba(236,0,63,0.13)' }} />
@@ -61,23 +61,22 @@ export default function Home() {
               style={{ background: 'conic-gradient(from 0deg, rgba(236,0,63,0.22), rgba(236,0,63,0) 55%)', transformOrigin: 'center' }}
             />
           </div>
-          <div className="relative">
+          <div className="relative mx-auto max-w-[1120px] px-6">
           <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide text-brand-800">
             <span className="h-2 w-2 flex-none rounded-full bg-brand-600" aria-hidden="true" />
-            Enterprise capable · Individually crafted · Traceable Benefit Realisation
+            Life is a project · Traceable Benefit Realisation
           </div>
 
-          <h1 className="max-w-[14ch] font-display text-[clamp(40px,6vw,76px)] font-bold leading-[0.98] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
-            &ldquo;Life is a project.&rdquo;
+          <h1 className="max-w-[15ch] font-display text-[clamp(40px,6vw,76px)] font-bold leading-[0.98] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
+            A whole team of trusted advisors, for less than the price of a sushi roll.
           </h1>
 
-          <p className="mt-6 max-w-[40ch] text-[clamp(18px,2vw,23px)] leading-[1.45] text-brand-dark/80 [text-wrap:pretty]">
-            Change is life&rsquo;s only constant (panta rhei &mdash; Heraclitus 500 BCE). You can choose to try and steer the changes
-            happening in your life and your business — or you can sit back and hope everything works
-            out somehow. PMWISE learns the lesson of{' '}
+          <p className="mt-6 max-w-[42ch] text-[clamp(18px,2vw,23px)] leading-[1.45] text-brand-dark/80 [text-wrap:pretty]">
+            PMWISE turns{' '}
             <strong className="font-semibold text-brand-dark">70 years of project management best
-            practice</strong>, innovates with the power of AI and then puts the results in the hands
-            of its clients.
+            practice</strong>{' '}
+            into an AI that takes you from a problem worth solving to a plan worth funding. For
+            anyone who wants to steer change rather than just report on it.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3.5">
@@ -85,13 +84,13 @@ export default function Home() {
               href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
               className="inline-flex min-h-[52px] items-center whitespace-nowrap rounded-full bg-brand-700 px-[30px] font-display text-[17px] font-semibold text-white shadow-sm transition hover:-translate-y-px hover:bg-brand-800"
             >
-              Contact our founder to learn more
+              Get early access
             </a>
             <a
-              href="#story"
+              href="/pricing"
               className="inline-flex min-h-[52px] items-center whitespace-nowrap rounded-full border-[1.5px] border-brand-200 bg-white px-[26px] font-display text-[17px] font-semibold text-brand-800 transition hover:border-brand-600 hover:bg-brand-50"
             >
-              Read our story →
+              See what $5 buys →
             </a>
           </div>
           </div>
