@@ -1,4 +1,5 @@
-import pmwiseIcon from '../pmwise_icon_color.png'
+import SiteHeader from '../_components/SiteHeader'
+import SiteFooter from '../_components/SiteFooter'
 
 export const metadata = {
   title: 'Not your average spreadsheet — the philosophy & ethics of PMWISE',
@@ -63,39 +64,11 @@ function PrincipleRow({ p, dark }) {
 export default function Philosophy() {
   return (
     <div className="overflow-x-hidden font-body text-brand-dark">
-      <a
-        href="#main"
-        className="sr-only rounded-br-lg bg-brand-dark px-5 py-3 font-display font-semibold text-white focus:not-sr-only focus:absolute focus:left-0 focus:top-0 focus:z-[100]"
-      >
-        Skip to content
-      </a>
-
-      {/* ============ HEADER ============ */}
-      <header className="sticky top-0 z-50 border-b border-brand-dark/10 bg-white/85 backdrop-blur-md backdrop-saturate-150">
-        <div className="mx-auto flex max-w-[1120px] items-center justify-between gap-4 px-6 py-3.5">
-          <a href="/" className="flex items-center gap-2.5 text-brand-dark no-underline">
-            <img src={pmwiseIcon.src} alt="" width={30} height={30} className="h-[30px] w-[30px]" />
-            <span className="font-display text-xl font-bold tracking-tight">
-              PMWISE<span className="text-brand-700">.AI</span>
-            </span>
-          </a>
-          <nav aria-label="Primary" className="flex items-center gap-2">
-            <a href="/" className="inline-flex min-h-[44px] items-center px-3.5 font-display text-[15px] font-medium text-brand-dark no-underline">
-              ← Back to PMWISE.AI
-            </a>
-            <a
-              href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
-              className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-brand-700 px-[18px] font-display text-[15px] font-semibold text-white transition-colors hover:bg-brand-800"
-            >
-              Speak to our founder
-            </a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader current="/philosophy" />
 
       <main id="main">
         {/* ============ HERO ============ */}
-        <section className="relative overflow-hidden bg-brand-dark">
+        <section className="on-dark relative overflow-hidden bg-brand-dark">
           <Radar size={620} />
           <div className="relative mx-auto max-w-[1120px] px-6 pb-20 pt-[88px]">
             <div className="mb-7 inline-flex items-center gap-2.5 rounded-full px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide" style={{ border: '1px solid rgba(255,143,163,0.35)', background: 'rgba(236,0,63,0.10)', color: '#FF8FA3' }}>
@@ -162,7 +135,7 @@ export default function Philosophy() {
                 {CSIRO.map((p) => <PrincipleRow key={p[0]} p={p} dark={false} />)}
                 <p className="mt-[18px] text-[13px] italic leading-[1.5] text-brand-800">Dawson et al., Data61 CSIRO, 2019 — adopted by PMWISE as binding.</p>
               </div>
-              <div className="rounded-[20px] bg-brand-dark p-8">
+              <div className="on-dark rounded-[20px] bg-brand-dark p-8">
                 <div className="mb-1.5 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-brand-400">PMWISE&rsquo;s own extensions</div>
                 <h3 className="mb-5 font-display text-[21px] font-bold tracking-tight text-white">Five more, for the stakes of project work</h3>
                 {EXTENSIONS.map((p) => <PrincipleRow key={p[0]} p={p} dark={true} />)}
@@ -195,7 +168,7 @@ export default function Philosophy() {
 
         {/* ============ THROUGH-LINE ============ */}
         <section className="mx-auto max-w-[900px] px-6 pb-10 pt-16">
-          <div className="relative overflow-hidden rounded-[28px] bg-brand-dark p-[clamp(40px,6vw,72px)]">
+          <div className="on-dark relative overflow-hidden rounded-[28px] bg-brand-dark p-[clamp(40px,6vw,72px)]">
             <div aria-hidden="true" className="absolute bottom-[-120px] right-[-120px] h-[380px] w-[380px] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
             <div aria-hidden="true" className="absolute bottom-[-60px] right-[-60px] h-[260px] w-[260px] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.12)' }} />
             <p className="relative mb-5 font-display text-[13px] font-bold uppercase tracking-[0.1em] text-brand-400">The through-line</p>
@@ -213,7 +186,7 @@ export default function Philosophy() {
 
         {/* ============ CTA ============ */}
         <section className="mx-auto max-w-[1120px] px-6 pb-24 pt-10">
-          <div className="rounded-[28px] bg-brand-500 px-8 py-[72px] text-center">
+          <div className="on-dark rounded-[28px] bg-brand-500 px-8 py-[72px] text-center">
             <h2 className="mx-auto mb-5 max-w-[22ch] font-display text-[clamp(30px,4.5vw,48px)] font-extrabold leading-[1.05] tracking-[-0.03em] text-white [text-wrap:balance]">
               Curious how a tool with a conscience actually works?
             </h2>
@@ -230,23 +203,7 @@ export default function Philosophy() {
         </section>
       </main>
 
-      {/* ============ FOOTER ============ */}
-      <footer className="border-t border-brand-dark/10">
-        <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-5 px-6 py-10">
-          <div className="flex items-center gap-2.5">
-            <img src={pmwiseIcon.src} alt="" width={26} height={26} className="h-[26px] w-[26px]" />
-            <span className="font-display text-[17px] font-bold text-brand-dark">
-              PMWISE<span className="text-brand-700">.AI</span>
-            </span>
-          </div>
-          <p className="text-[15px] text-brand-dark/70">© 2026 PMWISE.AI · Huon Valley, Tasmania</p>
-          <div className="flex items-center gap-5">
-            <a href="https://www.linkedin.com/company/pmwise-ai/" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">LinkedIn</a>
-            <a href="/security" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">Security</a>
-            <a href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">support@pmwise.ai</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

@@ -1,4 +1,5 @@
-import pmwiseIcon from '../pmwise_icon_color.png'
+import SiteHeader from '../_components/SiteHeader'
+import SiteFooter from '../_components/SiteFooter'
 
 export const metadata = {
   title: 'Security at PMWISE.AI — our open Security Radar',
@@ -6,32 +7,46 @@ export const metadata = {
     'Our open, living register of how PMWISE.AI stays secure — what is live, what we are building, and where the gaps are. Published openly, gaps and all.',
 }
 
+// Every status here must match pmwise-app as it is TODAY — this register is only worth publishing
+// if it is true. Last reconciled against pmwise-core docs/workflow/NOW.md on 23 September 2026.
+//   Live        — built and in effect in the app
+//   Ready       — built and tested, switched on when PMWISE goes on sale
+//   In design   — designed, build to follow
+//   Planned     — committed, not yet designed in detail
+//   Not planned — considered and deliberately not being built; said out loud rather than dropped
 const YOU_ITEMS = [
-  ['Every document is private to your profile and isolated from every other client', 'Live'],
-  ['Files are stored in private storage — no public, guessable links; downloads use short-lived signed links', 'Live'],
-  ['Uploaded documents are scanned for malware and validated before they can be used or read by our AI', 'Live'],
+  ['Each client\u2019s information is walled off from every other client\u2019s — enforced by the database itself, not just by our code', 'Live'],
+  ['You decide who sees each project: people you invite can read for free, and only people you choose can change anything', 'Live'],
+  ['Sensitive documents are visible only to the people you trust with them, project by project', 'Ready'],
+  ['Files are stored privately — no public or guessable links; downloads use short-lived signed links', 'Live'],
+  ['Uploads are checked before our AI will read them: file type verified from the contents, executables and known test malware refused', 'Live'],
+  ['A full antivirus engine on every upload', 'Ready'],
   ['Data is encrypted in transit and at rest', 'Live'],
+  ['A permanent record of every change to who can access what', 'Live'],
+  ['Export your plans and reports to take elsewhere — and you keep that even if you stop paying', 'Live'],
   ['Client-held encryption keys (BYOK) — so only you can unlock your document content', 'In design'],
   ['A confidential-computing enclave (TEE) so even we cannot read your documents during analysis', 'In design'],
-  ['A tamper-evident log of every access to your content, visible to you', 'In design'],
-  ['One-click export of everything you have put in, to take elsewhere', 'Planned'],
+  ['A log of every access to your content, visible to you', 'In design'],
 ]
 
 const PLATFORM_ITEMS = [
   ['Untrusted document content is treated as data, never instructions — it cannot hijack our AI', 'Live'],
   ['Secrets and keys are server-side only and never reach your browser', 'Live'],
-  ['Database access is locked down and mediated only through our server', 'Live'],
+  ['Every read and write is checked by the database against who you are — the master key is kept for a short, audited list of jobs', 'Live'],
   ['An ethics layer governs every AI action', 'Live'],
+  ['Payments handled entirely by Stripe — your card details never touch PMWISE', 'Ready'],
   ['Every code change is security-reviewed before it ships', 'In design'],
   ['Automated dependency, secret and configuration scanning', 'In design'],
-  ['Sign-in with multi-factor authentication for team accounts', 'Planned'],
   ['A written incident-response plan and responsible-disclosure programme', 'Planned'],
+  ['Multi-factor sign-in — a password signs you in and a reset comes only by emailed link; we chose simplicity here and will revisit it for enterprise clients', 'Not planned'],
 ]
 
+// Status is carried by the WORD in each pill, never by colour alone (WCAG 1.4.1).
 function tagClasses(label) {
   if (label === 'Live') return 'bg-brand-50 text-brand-700'
+  if (label === 'Ready') return 'bg-brand-50 text-brand-800 ring-1 ring-inset ring-brand-300'
   if (label === 'In design') return 'bg-brand-100 text-brand-800'
-  return 'bg-brand-dark/5 text-brand-dark/70'
+  return 'bg-brand-dark/5 text-brand-dark/80'
 }
 
 function Checklist({ items }) {
@@ -57,42 +72,11 @@ function Checklist({ items }) {
 export default function Security() {
   return (
     <div className="overflow-x-hidden font-body text-brand-dark">
-      <a
-        href="#main"
-        className="sr-only rounded-br-lg bg-brand-dark px-5 py-3 font-display font-semibold text-white focus:not-sr-only focus:absolute focus:left-0 focus:top-0 focus:z-[100]"
-      >
-        Skip to content
-      </a>
-
-      {/* ============ HEADER ============ */}
-      <header className="sticky top-0 z-50 border-b border-brand-dark/10 bg-white/85 backdrop-blur-md backdrop-saturate-150">
-        <div className="mx-auto flex max-w-[1120px] items-center justify-between gap-4 px-6 py-3.5">
-          <a href="/" className="flex items-center gap-2.5 text-brand-dark no-underline">
-            <img src={pmwiseIcon.src} alt="" width={30} height={30} className="h-[30px] w-[30px]" />
-            <span className="font-display text-xl font-bold tracking-tight">
-              PMWISE<span className="text-brand-700">.AI</span>
-            </span>
-          </a>
-          <nav aria-label="Primary" className="flex items-center gap-2">
-            <a
-              href="/"
-              className="inline-flex min-h-[44px] items-center px-3.5 font-display text-[15px] font-medium text-brand-dark no-underline"
-            >
-              ← Back to PMWISE.AI
-            </a>
-            <a
-              href="mailto:info@pmwise.ai?subject=Early%20access%20%E2%80%94%20PMWise"
-              className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-brand-700 px-[18px] font-display text-[15px] font-semibold text-white transition-colors hover:bg-brand-800"
-            >
-              Speak to our founder
-            </a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader current="/security" />
 
       <main id="main">
         {/* ============ HERO ============ */}
-        <section className="relative overflow-hidden bg-brand-dark">
+        <section className="on-dark relative overflow-hidden bg-brand-dark">
           <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-[-180px] -translate-y-1/2 h-[620px] w-[620px]">
             <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
             <div className="absolute inset-[15%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.12)' }} />
@@ -135,7 +119,7 @@ export default function Security() {
                 what we hold, and cannot let one client&rsquo;s world touch another&rsquo;s.
               </p>
             </div>
-            <div className="rounded-[20px] bg-brand-dark p-8">
+            <div className="on-dark rounded-[20px] bg-brand-dark p-8">
               <div className="mb-3.5 font-display text-[13px] font-bold uppercase tracking-[0.1em] text-brand-400">
                 Protecting the platform
               </div>
@@ -189,7 +173,7 @@ export default function Security() {
 
         {/* ============ CERTIFICATION ============ */}
         <section className="mx-auto max-w-[900px] px-6 py-6">
-          <div className="relative overflow-hidden rounded-[22px] bg-brand-dark p-10">
+          <div className="on-dark relative overflow-hidden rounded-[22px] bg-brand-dark p-10">
             <div aria-hidden="true" className="pointer-events-none absolute top-1/2 right-[-120px] -translate-y-1/2 h-[360px] w-[360px]">
               <div className="absolute inset-0 rounded-full" style={{ border: '1px solid rgba(255,143,163,0.14)' }} />
               <div className="absolute inset-[22%] rounded-full" style={{ border: '1px solid rgba(255,143,163,0.11)' }} />
@@ -228,26 +212,19 @@ export default function Security() {
             </p>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-6 font-display text-[13px] text-brand-dark/70">
+          <div className="mt-8 flex flex-wrap items-center gap-6 font-display text-[14px] text-brand-dark/80">
             <span className="font-bold">Legend:</span>
-            <span>
-              <span className="mr-2 inline-block h-2.5 w-2.5 rounded-full bg-brand-700" />
-              Live — built and in effect
-            </span>
-            <span>
-              <span className="mr-2 inline-block h-2.5 w-2.5 rounded-full bg-brand-300" />
-              In design — designed and committed, build to follow
-            </span>
-            <span>
-              <span className="mr-2 inline-block h-2.5 w-2.5 rounded-full bg-brand-dark/30" />
-              Planned — committed, not yet designed in detail
-            </span>
+            <span>Live — built and in effect</span>
+            <span>Ready — built and tested, switched on at launch</span>
+            <span>In design — designed, build to follow</span>
+            <span>Planned — committed, not yet designed</span>
+            <span>Not planned — a deliberate choice, stated openly</span>
           </div>
         </section>
 
         {/* ============ CTA ============ */}
         <section className="mx-auto max-w-[1120px] px-6 pb-24">
-          <div className="rounded-[28px] bg-brand-500 px-8 py-[72px] text-center">
+          <div className="on-dark rounded-[28px] bg-brand-500 px-8 py-[72px] text-center">
             <h2 className="mx-auto mb-5 max-w-[22ch] font-display text-[clamp(30px,4.5vw,48px)] font-extrabold leading-[1.05] tracking-[-0.03em] text-white [text-wrap:balance]">
               Questions about how we handle your data?
             </h2>
@@ -265,23 +242,7 @@ export default function Security() {
         </section>
       </main>
 
-      {/* ============ FOOTER ============ */}
-      <footer className="border-t border-brand-dark/10">
-        <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-5 px-6 py-10">
-          <div className="flex items-center gap-2.5">
-            <img src={pmwiseIcon.src} alt="" width={26} height={26} className="h-[26px] w-[26px]" />
-            <span className="font-display text-[17px] font-bold text-brand-dark">
-              PMWISE<span className="text-brand-700">.AI</span>
-            </span>
-          </div>
-          <p className="text-[15px] text-brand-dark/70">© 2026 PMWISE.AI · Huon Valley, Tasmania</p>
-          <div className="flex items-center gap-5">
-            <a href="https://www.linkedin.com/company/pmwise-ai/" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">LinkedIn</a>
-            <a href="/philosophy" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">Philosophy</a>
-            <a href="mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise" className="inline-flex min-h-[44px] items-center font-display text-[15px] font-medium text-brand-700 underline underline-offset-[3px]">support@pmwise.ai</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

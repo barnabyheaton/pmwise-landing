@@ -24,6 +24,12 @@ body {
   border-radius: 3px;
 }
 
+/* On dark or saturated surfaces the brand.800 ring measures 1.08:1 against #1F2937 — invisible.
+   Any section marked .on-dark switches to white: 14.68:1 on #1F2937, 4.53:1 on #EC003F. */
+.on-dark :focus-visible {
+  outline-color: #ffffff;
+}
+
 /* Pricing hero radar sweep. */
 @keyframes radarSweep {
   to {
@@ -44,10 +50,7 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
-/* ===== Radar sweep motif (Philosophy + Security) ===== */
-@keyframes radarSweep {
-  to { transform: rotate(-360deg); }
-}
+/* Philosophy + Security set the sweep inline, so motion-safe cannot reach it. */
 @media (prefers-reduced-motion: reduce) {
   [style*="radarSweep"] { animation: none !important; }
 }
