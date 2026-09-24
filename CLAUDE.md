@@ -44,8 +44,10 @@ behaviour. If something can't meet AA, flag it explicitly instead of shipping.
   echo the two halves.
 - **Positioning** — Benefit-driven project management. Keep the *why* at the
   centre; the method exists to serve the outcome, not the schedule/budget.
-- **Tone** — Honest, personal, plain-spoken, anti-jargon. Built in the open
-  from the Huon Valley, Tasmania. No hype, no guarantees — "just the method,
+- **Tone** — Honest, personal, plain-spoken, anti-jargon. ⚠️ Do NOT use
+  "built in the open" — Barnaby finds it jarring (24 Sep 2026). Never mention any
+  work Barnaby does alongside PMWISE. Made in Cygnet, on Melukerdee Country
+  (lutruwita/Tasmania); the footer carries the Acknowledgement of Country. No hype, no guarantees — "just the method,
   the journey, and the proof as it comes." Prefer plain words over enterprise
   ceremony, even when describing enterprise-grade capability.
 - **Recurring proof points** — 70 years of project best practice; ~70% of

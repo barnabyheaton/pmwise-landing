@@ -79,7 +79,7 @@ export default function Home() {
             <div>
               <p className="mb-6 inline-flex flex-wrap items-center gap-x-2.5 gap-y-1 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 font-display text-[13.5px] font-semibold tracking-wide text-brand-800">
                 <span className="h-2 w-2 flex-none rounded-full bg-brand-600" aria-hidden="true" />
-                Built in the open · Problem → Plan is working today
+                Problem → Plan is working today · Do → Done is next
               </p>
 
               <h1 className="max-w-[16ch] font-display text-[clamp(38px,5.6vw,68px)] font-bold leading-[1] tracking-[-0.03em] text-brand-dark [text-wrap:balance]">
@@ -284,28 +284,32 @@ export default function Home() {
               id="story-h"
               className="mb-8 max-w-[18ch] font-display text-[clamp(28px,4vw,42px)] font-bold leading-[1.08] tracking-[-0.02em] text-brand-dark"
             >
-              Twenty years to build a better PM mousetrap.
+              Why the why comes first.
             </h2>
 
             <div className="text-[20px] leading-[1.62] text-brand-dark/85">
               <p className="mb-6 [text-wrap:pretty]">
-                When I first discovered project management 20-odd years ago, I just got it. Prince2
-                made sense, and I have been digging deeper ever since. Yet no matter how many
-                frameworks exist, most projects still fall short. That is the puzzle I have been
-                trying to solve.
+                For twenty years I was usually brought in after the important decisions had been
+                made — the business case written, the product chosen, the budget set. Often the
+                trouble was already baked in.
               </p>
-              <p className="mb-6 [text-wrap:pretty]">
-                Accessible AI finally makes a{' '}
-                <strong className="font-semibold text-brand-800">clean-sheet approach</strong>{' '}
-                possible: keep the best of what I have seen, drop what never worked, put the horse
-                back in front of the cart — and build, test and release it in the open.
+              <p className="mb-6 font-display text-[clamp(22px,2.6vw,27px)] font-semibold leading-[1.25] text-brand-dark [text-wrap:balance]">
+                Projects rarely fail in delivery. They fail at the start.
               </p>
               <p className="[text-wrap:pretty]">
-                From problem to plan. From doing to done. From why to why not.
+                PMWISE puts the questions I learned to ask the hard way at the very beginning, where
+                they can still change the outcome — for anyone, not just programs that can afford a
+                room full of consultants.
               </p>
               <p className="mt-6 font-display text-[17px] font-semibold text-brand-dark">
-                — Barnaby, founder
+                — Barnaby Heaton, founder
               </p>
+              <Link
+                href="/about"
+                className="mt-6 inline-flex min-h-[44px] items-center font-display text-[17px] font-semibold text-brand-700 underline underline-offset-[4px] hover:text-brand-800"
+              >
+                Read Barnaby&rsquo;s story →
+              </Link>
             </div>
           </div>
         </section>
