@@ -4,7 +4,7 @@ import SiteFooter from '../_components/SiteFooter'
 export const metadata = {
   title: 'About Barnaby — PMWISE.AI',
   description:
-    'Barnaby Heaton has spent twenty years inheriting projects whose trouble started before they began. PMWISE is his answer: good foundations, for anyone.',
+    'In twenty years, nobody asked Barnaby Heaton how a project should be run. GKB is the method he would have used; PMWISE is the tool he wished he had.',
 }
 
 // Facts on this page come from Barnaby's own résumé and LinkedIn (September 2026), and his
@@ -47,7 +47,7 @@ export default function AboutPage() {
             About Barnaby
           </p>
           <h1 className="max-w-[18ch] font-display text-[clamp(36px,5.4vw,58px)] font-bold leading-[1.02] tracking-[-0.03em] [text-wrap:balance]">
-            Twenty years of arriving after the important decisions.
+            The method I would have used. The tool I wished I had.
           </h1>
           <p className="mt-6 text-[clamp(19px,2.1vw,22px)] leading-[1.6] text-brand-dark/85 [text-wrap:pretty]">
             I&rsquo;m Barnaby Heaton. For more than twenty years I&rsquo;ve run projects in
@@ -57,22 +57,22 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* ============ THE PATTERN ============ */}
-        <section aria-labelledby="pattern-h" className="mx-auto max-w-[760px] px-4 pt-10 sm:px-6">
-          <h2 id="pattern-h" className="mb-5 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
-            The pattern
+        {/* ============ NOBODY ASKED ============ */}
+        <section aria-labelledby="asked-h" className="mx-auto max-w-[760px] px-4 pt-10 sm:px-6">
+          <h2 id="asked-h" className="mb-5 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
+            Nobody asked
           </h2>
           <div className="text-[20px] leading-[1.65] text-brand-dark/85">
             <p className="mb-6 [text-wrap:pretty]">
-              Along the way I noticed something. I was usually brought in after the important
-              decisions had been made: the business case written, the product chosen, the budget
-              set. My job was to make it work.
+              In all that time, I can&rsquo;t remember anyone asking a project manager how the
+              project should be run. By the time I arrived, the business case was written, the
+              product chosen and the budget set. My job was to make somebody else&rsquo;s decisions
+              work.
             </p>
             <p className="[text-wrap:pretty]">
-              Sometimes it did. Often the trouble had been baked in long before I arrived — a
-              product that was cheaper because it wasn&rsquo;t finished, a plan funded before
-              anyone had designed it, benefits nobody pinned down until the money was already
-              spent.
+              Sometimes they did. Often the trouble had been baked in long before I got there — a
+              product that was cheaper because it wasn&rsquo;t finished, a plan funded before anyone
+              had designed it, benefits nobody pinned down until the money was spent.
             </p>
           </div>
         </section>
@@ -83,30 +83,17 @@ export default function AboutPage() {
             <blockquote className="max-w-[22ch] font-display text-[clamp(30px,4.6vw,52px)] font-bold leading-[1.05] tracking-[-0.025em] text-white [text-wrap:balance]">
               Projects rarely fail in delivery. They fail at the start.
             </blockquote>
-            <figcaption className="mt-6 max-w-[56ch] text-[18px] leading-[1.55] text-white/85">
-              When nobody asks <em className="italic text-brand-200">why</em> clearly enough — or
-              checks whether the answer holds up.
-            </figcaption>
           </figure>
         </section>
 
-        {/* ============ FOUNDATIONS ============ */}
-        <section aria-labelledby="found-h" className="mx-auto max-w-[760px] px-4 sm:px-6">
-          <h2 id="found-h" className="mb-5 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
-            A failure of foundations
+        {/* ============ IF ANYONE HAD ASKED ============ */}
+        <section aria-labelledby="method-h" className="mx-auto max-w-[760px] px-4 sm:px-6">
+          <h2 id="method-h" className="mb-5 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
+            If anyone had asked
           </h2>
-          <div className="text-[20px] leading-[1.65] text-brand-dark/85">
-            <p className="mb-6 [text-wrap:pretty]">
-              I watched the Queensland Health payroll failure unfold while I was studying project
-              management, and it has stayed with me. It was as much a failure of foundations as of
-              technology: the decisions that doomed it were made long before anyone switched it on.
-            </p>
-            <p className="mb-8 [text-wrap:pretty]">
-              That is why PMWISE puts the why first. The questions I learned to ask the hard way
-              are built into every step — and you get to ask them before anything is set in stone,
-              not after.
-            </p>
-          </div>
+          <p className="mb-8 text-[20px] leading-[1.65] text-brand-dark/85 [text-wrap:pretty]">
+            I would have told them to start with the why — and to keep coming back to it:
+          </p>
           <ol className="grid list-none gap-3">
             {QUESTIONS.map((q, i) => (
               <li key={q} className="flex items-start gap-4 rounded-[16px] border border-brand-dark/10 bg-white p-5">
@@ -117,18 +104,45 @@ export default function AboutPage() {
               </li>
             ))}
           </ol>
+          <div className="mt-8 text-[20px] leading-[1.65] text-brand-dark/85">
+            <p className="mb-6 [text-wrap:pretty]">
+              Then I would have kept every piece of work tied to the benefit it was meant to
+              deliver, from the first idea to the day it is done. That method has a name now:{' '}
+              <strong className="font-semibold text-brand-dark">GKB</strong>. It is how I would
+              have run every one of those projects, if anyone had let me start at the start.
+            </p>
+          </div>
+          <aside
+            aria-label="What GKB means"
+            className="rounded-[18px] border-l-[5px] border-brand-700 bg-brand-50 px-6 py-5"
+          >
+            <p className="text-[17.5px] leading-[1.55] text-brand-dark [text-wrap:pretty]">
+              <strong className="font-display font-semibold">GKB</strong>, short for{' '}
+              <strong className="font-display font-semibold">GANKANBAN</strong>, joins the plan and
+              the day-to-day work into one picture, so you can always see what has been delivered
+              against what was promised. Its shape is settled, and it is being built into PMWISE
+              now.
+            </p>
+          </aside>
         </section>
 
-        {/* ============ FOR ANYONE ============ */}
-        <section aria-labelledby="anyone-h" className="mx-auto max-w-[760px] px-4 pt-14 sm:px-6">
-          <h2 id="anyone-h" className="mb-5 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
-            Good foundations, for anyone
+        {/* ============ THE TOOL ============ */}
+        <section aria-labelledby="tool-h" className="mx-auto max-w-[760px] px-4 pt-14 sm:px-6">
+          <h2 id="tool-h" className="mb-5 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
+            The tool I wished I had
           </h2>
-          <p className="text-[20px] leading-[1.65] text-brand-dark/85 [text-wrap:pretty]">
-            Good foundations shouldn&rsquo;t only be available to programs that can afford a room
-            full of consultants. PMWISE is my attempt to give them to anyone — whether that&rsquo;s
-            a community group planning a garden or a team planning a major program.
-          </p>
+          <div className="text-[20px] leading-[1.65] text-brand-dark/85">
+            <p className="mb-6 [text-wrap:pretty]">
+              Knowing the method was never the hard part. Doing it properly takes a room full of
+              specialists — analysts, planners, quality and risk people. Most projects cannot afford
+              that room, and most people never get near one.
+            </p>
+            <p className="[text-wrap:pretty]">
+              PMWISE is that room. It is the tool I wished I had for twenty years — and now anyone
+              can have it, whether that is a community group planning a garden or a team planning a
+              major program.
+            </p>
+          </div>
         </section>
 
         {/* ============ CAREER + CREDENTIALS ============ */}
