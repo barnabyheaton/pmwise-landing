@@ -35,6 +35,24 @@ Concretely, every UI change must satisfy:
 Before considering any UI work done, verify contrast and keyboard/focus
 behaviour. If something can't meet AA, flag it explicitly instead of shipping.
 
+## ⚠️ Website copy is Barnaby's words — binding from 25 September 2026
+
+> *"From now on the website copy has to be my words. This will take longer but I need to
+> dedicate as much effort to this as the product and the method."* — Barnaby, 25 Sep 2026
+
+- **Never write or rewrite prose a visitor reads** — headings, body copy, buttons, captions,
+  FAQ answers, metadata descriptions. A session-drafted About page was rejected on this
+  ground: *"That copy isn't in my voice."*
+- **What a session MAY do:** lay out and style his text; fix a plain typo or spelling
+  (Australian English) and say so; flag a claim that is inaccurate against the app or
+  `licensing.md`, or legally risky, and **ask** rather than reword; supply facts, structure,
+  questions or raw material for him to write from.
+- **Placeholder, never prose:** where a layout needs text he has not written, use a visible
+  `[Barnaby to write: …]` marker, never a draft.
+- ⚠️ Much of the copy live on 25 Sep 2026 (home, pricing, security, About) was drafted by
+  sessions on 23–24 Sep. It is due to be replaced by his words, page by page. Do not treat
+  it as his voice or imitate it.
+
 ## Voice & messaging
 
 - **Tagline (organising idea)** — **"Enterprise capable, individual
