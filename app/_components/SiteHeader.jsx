@@ -9,6 +9,7 @@ const NAV = [
   { href: '/pricing', label: 'Pricing' },
   { href: '/philosophy', label: 'Philosophy' },
   { href: '/security', label: 'Security' },
+  { href: '/about', label: 'About' },
 ]
 
 export const FOUNDER_MAILTO =
@@ -33,13 +34,13 @@ export default function SiteHeader({ current }) {
             <span className="sr-only">— home</span>
           </Link>
           <nav aria-label="Primary" className="flex items-center gap-1">
-            <ul className="hidden list-none items-center gap-1 md:flex">
+            <ul className="hidden list-none items-center gap-0.5 lg:flex">
               {NAV.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     aria-current={current === item.href ? 'page' : undefined}
-                    className="inline-flex min-h-[44px] items-center rounded-full px-3.5 font-display text-[15px] font-medium text-brand-dark/80 transition-colors hover:bg-brand-50 hover:text-brand-dark aria-[current=page]:text-brand-800 aria-[current=page]:underline aria-[current=page]:underline-offset-[6px]"
+                    className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full px-3 font-display text-[15px] font-medium text-brand-dark/80 transition-colors hover:bg-brand-50 hover:text-brand-dark aria-[current=page]:text-brand-800 aria-[current=page]:underline aria-[current=page]:underline-offset-[6px]"
                   >
                     {item.label}
                   </Link>
@@ -50,7 +51,7 @@ export default function SiteHeader({ current }) {
             <Link
               href="/pricing"
               aria-current={current === '/pricing' ? 'page' : undefined}
-              className="inline-flex min-h-[44px] items-center rounded-full px-3 font-display text-[15px] font-medium text-brand-dark/80 md:hidden"
+              className="inline-flex min-h-[44px] items-center rounded-full px-3 font-display text-[15px] font-medium text-brand-dark/80 lg:hidden"
             >
               Pricing
             </Link>

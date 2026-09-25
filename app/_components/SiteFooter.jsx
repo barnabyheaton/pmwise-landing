@@ -6,6 +6,7 @@ const LINKS = [
   { href: '/pricing', label: 'Pricing' },
   { href: '/philosophy', label: 'Philosophy' },
   { href: '/security', label: 'Security' },
+  { href: '/about', label: 'About Barnaby' },
   { href: 'https://www.linkedin.com/company/pmwise-ai/', label: 'LinkedIn' },
   { href: 'mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise', label: 'support@pmwise.ai' },
 ]
@@ -22,8 +23,13 @@ export default function SiteFooter() {
             </span>
           </div>
           <p className="mt-3 max-w-[48ch] text-[15px] leading-[1.5] text-brand-dark/75">
-            Built in the open from the Huon Valley, Tasmania. PMWISE is not yet on sale — nobody
-            is charged until PMWISE is a registered company with lawyer-reviewed terms.
+            PMWISE is made in Cygnet, on the land of the Melukerdee people, one of the palawa
+            nations of lutruwita/Tasmania. We acknowledge them as the Traditional Owners and
+            Custodians of this Country, and pay our respects to Elders past and present.
+          </p>
+          <p className="mt-3 text-[15px] text-brand-dark/75">
+            Not yet on sale — nobody is charged until PMWISE is a registered company with
+            lawyer-reviewed terms.
           </p>
           <p className="mt-2 text-[15px] text-brand-dark/75">© 2026 PMWISE.AI</p>
         </div>
