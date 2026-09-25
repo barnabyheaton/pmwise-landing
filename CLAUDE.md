@@ -37,21 +37,27 @@ behaviour. If something can't meet AA, flag it explicitly instead of shipping.
 
 ## ⚠️ Website copy is Barnaby's words — binding from 25 September 2026
 
-> *"From now on the website copy has to be my words. This will take longer but I need to
-> dedicate as much effort to this as the product and the method."* — Barnaby, 25 Sep 2026
+> *"We need to collaborate but you need to retain my turn of phrase, not sanitise it."*
+> — Barnaby, 25 Sep 2026. And: *"all AI writing sticks out like dog's balls."*
 
-- **Never write or rewrite prose a visitor reads** — headings, body copy, buttons, captions,
-  FAQ answers, metadata descriptions. A session-drafted About page was rejected on this
-  ground: *"That copy isn't in my voice."*
-- **What a session MAY do:** lay out and style his text; fix a plain typo or spelling
-  (Australian English) and say so; flag a claim that is inaccurate against the app or
-  `licensing.md`, or legally risky, and **ask** rather than reword; supply facts, structure,
-  questions or raw material for him to write from.
-- **Placeholder, never prose:** where a layout needs text he has not written, use a visible
-  `[Barnaby to write: …]` marker, never a draft.
+**It is a collaboration, and his voice wins every tie.** His father was a journalist and
+creative writer; his idiom is deliberate, not a draft waiting to be tidied.
+
+- **Start from his words** — what he writes or says, in chat, in the repo, in the decision
+  log. Arrange, cut and tighten them; **never replace them with a smoother equivalent.**
+- **Keep his idiom verbatim**: Australianisms, blunt asides, jokes, rhetorical turns
+  ("Well guess what, you can't", "put the horses back in front of the carts", "from why to
+  why not", "less than a sushi roll"). A session cut the first of those on 23 Sep — don't.
+- **Show your hand.** When you add or change a line, say which, so he can strike it. Never
+  pass off a session's sentence as his.
+- **Avoid the AI tells**: tidy triads, "not X, but Y", "It's not just…", em-dash stacks,
+  every sentence the same length, abstract nouns ("clarity", "alignment"), summary
+  sign-offs, and polishing out anything rough on purpose.
+- **Still yours to do:** layout, accessibility, plain typos (say so), and flagging any claim
+  that is inaccurate against the app or `licensing.md`, or legally risky — ask, don't reword.
 - ⚠️ Much of the copy live on 25 Sep 2026 (home, pricing, security, About) was drafted by
-  sessions on 23–24 Sep. It is due to be replaced by his words, page by page. Do not treat
-  it as his voice or imitate it.
+  sessions on 23–24 Sep. It is due to be redone with him, page by page. Do not treat it as
+  his voice or imitate it.
 
 ## Voice & messaging
 
