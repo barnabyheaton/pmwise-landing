@@ -27,7 +27,6 @@ const CREDENTIALS = [
   'Bachelor of Information and Communication Technology — University of the Sunshine Coast',
   'Certified Practising Senior Project Manager (CPSPM), achieved through the Australian Institute of Project Management',
   'Led the 2016 AIPM Tasmanian Project of the Year',
-  'TasICT Project and Program Management Award, 2017',
 ]
 
 const QUESTIONS = [
