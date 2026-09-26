@@ -97,6 +97,9 @@ export default function AboutPage() {
           {/* Section 5 — Barnaby's words, 26 Sep 2026. Commas added around the "Problem to
               Plan" clause so it parses. The "how it's built" link waits for that page to exist. */}
           <hr className="my-14 border-brand-dark/15" />
+          <h2 className="mb-6 font-display text-[clamp(26px,3.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em]">
+            Where are we?
+          </h2>
           <div className="space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
             <p>
               The first half, &ldquo;Problem to Plan&rdquo;, where we convert a nagging problem into
