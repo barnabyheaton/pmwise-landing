@@ -35,6 +35,30 @@ Concretely, every UI change must satisfy:
 Before considering any UI work done, verify contrast and keyboard/focus
 behaviour. If something can't meet AA, flag it explicitly instead of shipping.
 
+## ⚠️ Website copy is Barnaby's words — binding from 25 September 2026
+
+> *"We need to collaborate but you need to retain my turn of phrase, not sanitise it."*
+> — Barnaby, 25 Sep 2026. And: *"all AI writing sticks out like dog's balls."*
+
+**It is a collaboration, and his voice wins every tie.** His father was a journalist and
+creative writer; his idiom is deliberate, not a draft waiting to be tidied.
+
+- **Start from his words** — what he writes or says, in chat, in the repo, in the decision
+  log. Arrange, cut and tighten them; **never replace them with a smoother equivalent.**
+- **Keep his idiom verbatim**: Australianisms, blunt asides, jokes, rhetorical turns
+  ("Well guess what, you can't", "put the horses back in front of the carts", "from why to
+  why not", "less than a sushi roll"). A session cut the first of those on 23 Sep — don't.
+- **Show your hand.** When you add or change a line, say which, so he can strike it. Never
+  pass off a session's sentence as his.
+- **Avoid the AI tells**: tidy triads, "not X, but Y", "It's not just…", em-dash stacks,
+  every sentence the same length, abstract nouns ("clarity", "alignment"), summary
+  sign-offs, and polishing out anything rough on purpose.
+- **Still yours to do:** layout, accessibility, plain typos (say so), and flagging any claim
+  that is inaccurate against the app or `licensing.md`, or legally risky — ask, don't reword.
+- ⚠️ Much of the copy live on 25 Sep 2026 (home, pricing, security, About) was drafted by
+  sessions on 23–24 Sep. It is due to be redone with him, page by page. Do not treat it as
+  his voice or imitate it.
+
 ## Voice & messaging
 
 - **Tagline (organising idea)** — **"Enterprise capable, individual
@@ -98,6 +122,9 @@ reds/pinks.
   alone (1.4.1).
 
 ## Stack notes
+
+- **Email:** info@, support@ and barnaby@pmwise.ai all reach the same mailbox (Barnaby,
+  26 Sep 2026) — do not "fix" one to another.
 
 - Next.js (App Router) + Tailwind. Define brand colours as Tailwind theme
   tokens so there's a single source of truth; prefer them over inline hex.
