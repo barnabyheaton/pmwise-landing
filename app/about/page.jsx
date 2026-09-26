@@ -5,9 +5,8 @@ export const metadata = {
   title: 'About — PMWISE.AI',
 }
 
-// Barnaby's words, verbatim (25 Sep 2026). Do not smooth, split or "improve" them —
-// see CLAUDE.md, "Website copy is Barnaby's words". The rest of this page is written with
-// him, starting from here.
+// Every word a visitor reads on this page is Barnaby's (25–26 Sep 2026), typos aside.
+// Do not smooth, split or "improve" it — see CLAUDE.md, "Website copy is Barnaby's words".
 
 export default function AboutPage() {
   return (
@@ -26,7 +25,8 @@ export default function AboutPage() {
 
           {/* Section 2 — Barnaby's words, 26 Sep 2026. Typos only fixed ("teh", "of the rails",
               closing quote); "not" added, confirmed by him. */}
-          <div className="mt-12 space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
+          <hr className="my-14 border-brand-dark/15" />
+          <div className="space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
             <p>
               When I was first exposed to organised project management 20 years ago, I took to it
               like a duck to water, because I had effectively been managing projects all my life. I
@@ -55,7 +55,8 @@ export default function AboutPage() {
 
           {/* Section 3 — Barnaby's words, 26 Sep 2026. Typos fixed; second "The issue is" cut
               and the closing line replaced, both at his instruction. */}
-          <div className="mt-12 space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
+          <hr className="my-14 border-brand-dark/15" />
+          <div className="space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
             <p>
               We have all seen the building shows, happy couple with big dreams and the host asks
               &lsquo;how long and how much&rsquo;. Cut to the end of the show, years behind and way
@@ -93,8 +94,39 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <p className="mt-16 rounded-xl border-2 border-dashed border-brand-dark/40 p-6 font-display text-[17px] text-brand-dark/80">
-            [Barnaby to write: section 4 — the tool, and how it was built]
+          {/* Section 5 — Barnaby's words, 26 Sep 2026. Commas added around the "Problem to
+              Plan" clause so it parses. The "how it's built" link waits for that page to exist. */}
+          <hr className="my-14 border-brand-dark/15" />
+          <div className="space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
+            <p>
+              The first half, &ldquo;Problem to Plan&rdquo;, where we convert a nagging problem into
+              a fully fleshed out plan, is built. We are currently working on the client management
+              and application administration piece, hoping to be finished shortly (thanks to Opus
+              5.5). The last piece will be delivering the plan which we call &ldquo;Do, Doing,
+              Done&rdquo; or &ldquo;Do to Done&rdquo;.
+            </p>
+            <p>We&rsquo;re hoping to be done by Christmas(!)</p>
+          </div>
+
+          {/* Section 6 — Barnaby's words, 26 Sep 2026. Comma added before the address. */}
+          <hr className="my-14 border-brand-dark/15" />
+          <p className="text-[20px] leading-[1.65] text-brand-dark/85">
+            If you would like to talk to me about how to apply GKB or join PMWise when it is ready,{' '}
+            <a
+              href="mailto:barnaby@pmwise.ai?subject=About%20PMWise"
+              className="font-semibold text-brand-700 underline underline-offset-[3px] hover:text-brand-800"
+            >
+              barnaby@pmwise.ai
+            </a>
+            .
+          </p>
+
+          {/* Acknowledgement of Country — kept at his instruction (26 Sep 2026). */}
+          <hr className="my-14 border-brand-dark/15" />
+          <p className="text-[17px] leading-[1.6] text-brand-dark/80">
+            PMWISE is made in Cygnet, in the Huon Valley, on the land of the Melukerdee people, one
+            of the palawa nations of lutruwita/Tasmania. I acknowledge them as the Traditional
+            Owners and Custodians of this Country, and pay my respects to Elders past and present.
           </p>
         </section>
       </main>
