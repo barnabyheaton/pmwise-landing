@@ -123,6 +123,9 @@ reds/pinks.
 
 ## Stack notes
 
+- **Email:** info@, support@ and barnaby@pmwise.ai all reach the same mailbox (Barnaby,
+  26 Sep 2026) — do not "fix" one to another.
+
 - Next.js (App Router) + Tailwind. Define brand colours as Tailwind theme
   tokens so there's a single source of truth; prefer them over inline hex.
 - `app/layout.jsx` owns the single `<html>`/`<body>` and the `next/font`
