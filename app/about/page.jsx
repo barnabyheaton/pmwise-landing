@@ -53,8 +53,48 @@ export default function AboutPage() {
             <p>PMWise and GKB is how I fix it.</p>
           </div>
 
+          {/* Section 3 — Barnaby's words, 26 Sep 2026. Typos fixed; second "The issue is" cut
+              and the closing line replaced, both at his instruction. */}
+          <div className="mt-12 space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
+            <p>
+              We have all seen the building shows, happy couple with big dreams and the host asks
+              &lsquo;how long and how much&rsquo;. Cut to the end of the show, years behind and way
+              over budget, the couple barely keeping it together, the host smugly pleased. Great
+              drama, woeful project management.
+            </p>
+            <p>
+              The issue is people have a set amount of money, they have an arbitrary deadline
+              (it&rsquo;s always Christmas). They set these two as the immovable bookends then try
+              and shoe horn everything in between. Partner 1&rsquo;s everything is not the same as
+              partner 2&rsquo;s, and the TV cameras eat it up.
+            </p>
+            <p>
+              GKB does many things different to traditional project frameworks, but the first thing
+              it does is it properly and fully describes the whys and the whats of the project
+              BEFORE it talks about the how longs and the how muchs.
+            </p>
+            <p>
+              With GKB and PMWise the couple explore and describe their dream home (or any other
+              project) which defines what is in and what is not (very important), why they are doing
+              what they are doing, what level of quality they need to achieve, who will need to be a
+              part of the team, what are the things that could and possibly will go wrong and how to
+              manage and account for them ahead of time, and only then do we talk about time and
+              money.
+            </p>
+            <p>
+              Fully informed the couple might see they need more money or more time, they can see
+              what each other&rsquo;s &lsquo;everythings&rsquo; include and maybe negotiate down to
+              something that meets their core needs while still sitting within their budgets.
+            </p>
+            <p>They might see Christmas was never going to happen and rethink the whole idea.</p>
+            <p className="font-display text-[22px] font-semibold text-brand-dark">
+              Stopping a bad project early is as successful as delivering a good one on time and on
+              budget.
+            </p>
+          </div>
+
           <p className="mt-16 rounded-xl border-2 border-dashed border-brand-dark/40 p-6 font-display text-[17px] text-brand-dark/80">
-            [Barnaby to write: section 3 — what GKB does differently]
+            [Barnaby to write: section 4 — the tool, and how it was built]
           </p>
         </section>
       </main>
