@@ -25,7 +25,7 @@ export default function AboutPage() {
           </p>
 
           {/* Section 2 — Barnaby's words, 26 Sep 2026. Typos only fixed ("teh", "of the rails",
-              closing quote). "[not]" awaits his confirmation. */}
+              closing quote); "not" added, confirmed by him. */}
           <div className="mt-12 space-y-6 text-[20px] leading-[1.65] text-brand-dark/85">
             <p>
               When I was first exposed to organised project management 20 years ago, I took to it
@@ -33,7 +33,7 @@ export default function AboutPage() {
               just didn&rsquo;t know that&rsquo;s what it was called, or that there were competing
               schools of thought about the best way to deliver. I found all of this incredibly
               exciting but what I didn&rsquo;t realise was project management was then (and still to
-              a lesser extent now) [not] considered a &lsquo;real profession&rsquo;. PMs were seen as
+              a lesser extent now) not considered a &lsquo;real profession&rsquo;. PMs were seen as
               unnecessary overheads as the client knows what they want, how much it will cost and
               how long it will take.
             </p>
