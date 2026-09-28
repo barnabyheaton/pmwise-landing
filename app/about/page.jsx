@@ -111,6 +111,30 @@ export default function AboutPage() {
             <p>We&rsquo;re hoping to be done by Christmas(!)</p>
           </div>
 
+          {/* Track record — Barnaby's words, 28 Sep 2026. "and" before "justice" and the
+              "cybersecurity" typo are the only changes. No names, by his instruction. */}
+          <hr className="my-14 border-brand-dark/15" />
+          <ul className="list-none space-y-4 border-l-[5px] border-brand-700 pl-6 text-[19px] leading-[1.6] text-brand-dark/85">
+            <li>Professional and award winning ICT project manager of 20 years standing.</li>
+            <li>
+              Worked across all three layers of government (local, state and federal), public and
+              private sector, vendor and client, with roles in banking, mining, education, energy,
+              health and justice.
+            </li>
+            <li>
+              Exposure to full stack digital transformations covering networks, infrastructure,
+              client facing fleets, IaaS, SaaS and cybersecurity.
+            </li>
+            <li>
+              Strategic, tactical and operational views, including governance, contract and
+              procurement, service delivery, finance, quality assurance and benefit realisation.
+            </li>
+            <li>
+              Currently exploring the use of AI to resolve many long standing issues in project
+              delivery.
+            </li>
+          </ul>
+
           {/* Section 6 — Barnaby's words, 26 Sep 2026. Comma added before the address. */}
           <hr className="my-14 border-brand-dark/15" />
           <p className="text-[20px] leading-[1.65] text-brand-dark/85">
