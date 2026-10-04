@@ -208,7 +208,13 @@ export default function Security() {
               find a flaw, we want to hear from you.
             </p>
             <p className="mt-4 text-[15px] leading-[1.6] text-brand-800">
-              Responsible disclosure contact: coming soon.
+              Responsible disclosure contact:{' '}
+              <a
+                href="mailto:security@pmwise.ai?subject=Security%20report%20%E2%80%94%20PMWise"
+                className="font-semibold underline underline-offset-2 hover:text-brand-dark"
+              >
+                security@pmwise.ai
+              </a>
             </p>
           </div>
 
