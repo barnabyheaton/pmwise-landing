@@ -8,7 +8,8 @@ export const metadata = {
 }
 
 // Every status here must match pmwise-app as it is TODAY — this register is only worth publishing
-// if it is true. Last reconciled against pmwise-core docs/workflow/NOW.md on 23 September 2026.
+// if it is true. Last reconciled against pmwise-core docs/workflow/NOW.md on 23 September 2026;
+// dependency checks moved to Live on 4 October 2026 (Dependabot on, all three repositories).
 //   Live        — built and in effect in the app
 //   Ready       — built and tested, switched on when PMWISE goes on sale
 //   In design   — designed, build to follow
@@ -36,7 +37,8 @@ const PLATFORM_ITEMS = [
   ['An ethics layer governs every AI action', 'Live'],
   ['Payments handled entirely by Stripe — your card details never touch PMWISE', 'Ready'],
   ['Every code change is security-reviewed before it ships', 'In design'],
-  ['Automated dependency, secret and configuration scanning', 'In design'],
+  ['Automated checks on the software we depend on', 'Live'],
+  ['Secret and configuration scanning', 'In design'],
   ['A written incident-response plan and responsible-disclosure programme', 'Planned'],
   ['Multi-factor sign-in — a password signs you in and a reset comes only by emailed link; we chose simplicity here and will revisit it for enterprise clients', 'Not planned'],
 ]
