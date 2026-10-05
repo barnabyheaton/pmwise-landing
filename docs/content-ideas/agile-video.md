@@ -42,6 +42,15 @@ generate interest in PMWise.
 - ⚠️ **Flagged, not reworded:** the framework's own name is **"Scaled Agile Framework"**, styled
   **SAFe** (lower-case e) — not "for Enterprises". Check before publishing; a critic will.
 
+**To workshop — his, 6 Oct 2026:**
+> "Good catch. The thing is I've only seen it applied in government organisations and that's when the
+> insanity starts. Need to work shop that bit."
+
+- ⬜ The angle: SAFe **in government** is where he has seen it, first hand — so the title's
+  "for Enterprises" may want to become something that names government. His to work out.
+- ⬜ If wanted: public, citable examples of government agencies adopting SAFe (annual reports, tenders,
+  audit-office reviews), so the claim rests on more than one person's experience. Not yet researched.
+
 **His ideas for the video:**
 - **Open with a Star Wars opening crawl** of the Manifesto's four values (below) — to introduce the rant.
 - **As an Aussie, look up Martin Fowler and interview him** — Fowler gave his 2018 "faux-agile" keynote
