@@ -35,6 +35,13 @@ generate interest in PMWise.
 > guise of communication/change/risk management and the model breaks. I think PMWise's exemplar clients
 > will be soloists."
 
+**His titles (6 Oct 2026):**
+- **Video 1:** *"The Scaled Agile Framework for Enterprises (SAFE) is the most oxymoronic business fad of
+  the last 50 years and it has to stop"*
+- **Video 2, the follow-up:** *"An interview with Martin Fowler, the man who was there. Does he feel SAFE"*
+- ⚠️ **Flagged, not reworded:** the framework's own name is **"Scaled Agile Framework"**, styled
+  **SAFe** (lower-case e) — not "for Enterprises". Check before publishing; a critic will.
+
 **His ideas for the video:**
 - **Open with a Star Wars opening crawl** of the Manifesto's four values (below) — to introduce the rant.
 - **As an Aussie, look up Martin Fowler and interview him** — Fowler gave his 2018 "faux-agile" keynote
