@@ -10,6 +10,8 @@ const NAV = [
   { href: '/philosophy', label: 'Philosophy' },
   { href: '/security', label: 'Security' },
   { href: '/about', label: 'About' },
+  // Barnaby, 12 Oct 2026: the Acknowledgement of Country page is reachable from the menu.
+  { href: '/acknowledgement-of-country', label: 'Acknowledgement of Country' },
 ]
 
 export const FOUNDER_MAILTO =
@@ -40,7 +42,7 @@ export default function SiteHeader({ current }) {
                   <Link
                     href={item.href}
                     aria-current={current === item.href ? 'page' : undefined}
-                    className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full px-3 font-display text-[15px] font-medium text-brand-dark/80 transition-colors hover:bg-brand-50 hover:text-brand-dark aria-[current=page]:text-brand-800 aria-[current=page]:underline aria-[current=page]:underline-offset-[6px]"
+                    className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full px-2 font-display text-[15px] font-medium text-brand-dark/80 transition-colors xl:px-3 hover:bg-brand-50 hover:text-brand-dark aria-[current=page]:text-brand-800 aria-[current=page]:underline aria-[current=page]:underline-offset-[6px]"
                   >
                     {item.label}
                   </Link>
