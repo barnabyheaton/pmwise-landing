@@ -1,5 +1,6 @@
 import SiteHeader from '../_components/SiteHeader'
 import SiteFooter from '../_components/SiteFooter'
+import AcknowledgementVideo from '../_components/AcknowledgementVideo'
 
 export const metadata = {
   title: 'About — PMWISE.AI',
@@ -155,6 +156,8 @@ export default function AboutPage() {
             of the palawa nations of lutruwita/Tasmania. I acknowledge them as the Traditional
             Owners and Custodians of this Country, and pay my respects to Elders past and present.
           </p>
+          {/* His recorded Acknowledgement of Country (12 Oct 2026), under the written one. */}
+          <AcknowledgementVideo />
         </section>
       </main>
 
