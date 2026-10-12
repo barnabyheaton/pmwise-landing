@@ -11,7 +11,7 @@ const LINKS = [
   { href: 'mailto:support@pmwise.ai?subject=Contact%20%E2%80%94%20PMWise', label: 'support@pmwise.ai' },
 ]
 
-export default function SiteFooter() {
+export default function SiteFooter({ onAcknowledgementPage = false }) {
   return (
     <footer className="border-t border-brand-dark/10">
       <div className="mx-auto grid max-w-[1120px] gap-6 px-4 py-10 sm:px-6 md:grid-cols-[1fr_auto] md:items-start">
@@ -27,6 +27,18 @@ export default function SiteFooter() {
             nations of lutruwita/Tasmania. We acknowledge them as the Traditional Owners and
             Custodians of this Country, and pay our respects to Elders past and present.
           </p>
+          {/* Barnaby, 12 Oct 2026: every acknowledgement at the foot of a page links to the
+              Acknowledgement of Country page. Link wording is a session's. */}
+          {!onAcknowledgementPage && (
+            <p className="mt-1 text-[15px]">
+              <a
+                href="/acknowledgement-of-country"
+                className="inline-flex min-h-[44px] items-center font-display font-medium text-brand-700 underline underline-offset-[3px] hover:text-brand-800"
+              >
+                Watch the Acknowledgement of Country
+              </a>
+            </p>
+          )}
           <p className="mt-3 text-[15px] text-brand-dark/75">
             Not yet on sale — nobody is charged until PMWISE is a registered company with
             lawyer-reviewed terms.
