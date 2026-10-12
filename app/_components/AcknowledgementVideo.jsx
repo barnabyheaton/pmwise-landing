@@ -32,7 +32,7 @@ export default function AcknowledgementVideo() {
         Your browser cannot play this video. The transcript below has every word of it.
       </video>
       <figcaption className="mt-3 font-display text-[15px] text-brand-dark/75">
-        Acknowledgement of Country · about 5 minutes · captions on
+        Acknowledgement of Country · 5 minutes · captions on
       </figcaption>
       <details className="mt-4 rounded-lg border border-brand-dark/15 px-4 py-3">
         <summary className="cursor-pointer font-display text-[16px] font-semibold text-brand-700 hover:text-brand-800">

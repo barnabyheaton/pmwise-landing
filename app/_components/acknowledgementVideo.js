@@ -12,7 +12,7 @@
 // The transcript is Barnaby's spoken words, corrected only where the auto-transcriber misheard a
 // name (CLAUDE.md, "Website copy is Barnaby's words"). Do not tidy it.
 
-export const ACKNOWLEDGEMENT_VIDEO_SRC = '%%VIDEO_URL%%'
+export const ACKNOWLEDGEMENT_VIDEO_SRC = 'https://bmvpxqhuqurazsuufgdk.supabase.co/storage/v1/object/public/public-media/videos/01-acknowledgement-of-country.mp4'
 export const ACKNOWLEDGEMENT_CAPTIONS = '/media/acknowledgement-of-country.vtt'
 export const ACKNOWLEDGEMENT_POSTER = '/media/acknowledgement-of-country-poster.png'
 
