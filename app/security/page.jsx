@@ -9,7 +9,9 @@ export const metadata = {
 
 // Every status here must match pmwise-app as it is TODAY — this register is only worth publishing
 // if it is true. Last reconciled against pmwise-core docs/workflow/NOW.md on 23 September 2026;
-// dependency checks moved to Live on 4 October 2026 (Dependabot on, all three repositories).
+// dependency checks moved to Live on 4 October 2026 (Dependabot on, all three repositories);
+// per-client keys added and BYOK/TEE moved to Not planned on 13 October 2026 (pmwise-app 0106 —
+// merge this only once it is on app.pmwise.ai).
 //   Live        — built and in effect in the app
 //   Ready       — built and tested, switched on when PMWISE goes on sale
 //   In design   — designed, build to follow
@@ -19,14 +21,15 @@ const YOU_ITEMS = [
   ['Each client\u2019s information is walled off from every other client\u2019s — enforced by the database itself, not just by our code', 'Live'],
   ['You decide who sees each project: people you invite can read for free, and only people you choose can change anything', 'Live'],
   ['Sensitive documents are visible only to the people you trust with them, project by project', 'Ready'],
-  ['Files are stored privately — no public or guessable links; downloads use short-lived signed links', 'Live'],
+  ['Files are stored privately — no public or guessable links; a file is opened only by PMWISE, for someone allowed to see it', 'Live'],
+  ['Each client\u2019s documents are locked with their own key, kept in a separate safe — a stolen copy is useless, and closing an account destroys its key', 'Live'],
   ['Uploads are checked before our AI will read them: file type verified from the contents, executables and known test malware refused', 'Live'],
   ['A full antivirus engine on every upload', 'Ready'],
   ['Data is encrypted in transit and at rest', 'Live'],
   ['A permanent record of every change to who can access what', 'Live'],
   ['Export your plans and reports to take elsewhere — and you keep that even if you stop paying', 'Live'],
-  ['Client-held encryption keys (BYOK) — so only you can unlock your document content', 'In design'],
-  ['A confidential-computing enclave (TEE) so even we cannot read your documents during analysis', 'In design'],
+  ['Client-held encryption keys (BYOK) — we hold each client\u2019s key for them instead, so there is nothing for you to lose or manage', 'Not planned'],
+  ['A confidential-computing enclave (TEE) so even we cannot read your documents during analysis — only needed alongside client-held keys', 'Not planned'],
   ['A log of every access to your content, visible to you', 'In design'],
 ]
 
