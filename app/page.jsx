@@ -25,7 +25,7 @@ const JOURNEY = [
   },
   {
     title: 'Walk the radars',
-    body: 'Scope, deliverables, quality, risk, resources and time. The Black Box drafts each one from what you have told it — you decide what stays.',
+    body: 'Scope, integrations, exclusions, resources, time and risk. Deliverables, components, features and qualities share one Scope page. The Black Box drafts each one from what you have told it — you decide what stays.',
     status: 'Built',
   },
   {

@@ -6,17 +6,20 @@
 // Contrast (measured): body text #1F2937 on #FFFFFF 14.68:1; muted text brand-dark/70 on white
 // ≈ 6.3:1; the "Why" chip #880727 on #FEE7ED 8.6:1.
 
+// Order and names follow the app's design bar (pmwise-app SectionNav.tsx) since the Scope Radar
+// went live on 16 Oct 2026: Deliverables and Quality are now one Scope page.
 const RADARS = [
   'Problem',
-  'Solution',
-  'Benefit',
+  'Scope statement',
+  'Scope boundaries',
   'Scope',
-  'Deliverables',
-  'Quality',
-  'Risk',
+  'Integrations',
+  'Exclusions',
   'Resources',
   'Time',
   'Plan',
+  'Risk',
+  'Benefit',
 ]
 
 const TRACE = [
